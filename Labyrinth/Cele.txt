@@ -1,0 +1,50 @@
+Projekt gry 3D, w którym celem jest wyjście z losowo generowanego labiryntu.
+    1. Dodatkowe Wyzwania:
+        ◦ Dodaj przeszkody, wrogów lub pułapki w labiryncie, które gracz musi unikać lub pokonać.
+        ◦ Umieść klucze lub przedmioty, które gracz musi znaleźć, aby otworzyć drzwi wyjściowe.
+    2. Zróżnicowane Środowisko:
+        ◦ Stwórz różne sekcje labiryntu, każda z unikalną estetyką i trudnościami.
+        ◦ Wykorzystaj różne tekstury i oświetlenie, aby nadać labiryntowi atmosferę.
+    3. Elementy RPG:
+        ◦ Dodaj elementy RPG, takie jak zdobywanie doświadczenia, umiejętności postaci czy rozwijanie postaci gracza w trakcie eksploracji.
+    4. Tryby Gry:
+        ◦ Dodaj różne tryby gry, na przykład tryb czasowy, w którym gracz musi wyjść z labiryntu w określonym czasie, aby zdobyć lepszą ocenę.
+    5. Oświetlenie i Atmosfera:
+        ◦ Skorzystaj z zaawansowanego oświetlenia, aby stworzyć atmosferyczne wnętrza i zagadkowe korytarze.
+        ◦ Eksperymentuj z efektami dźwiękowymi, aby dodatkowo wzmocnić atmosferę.
+    6. Poziomy Trudności:
+        ◦ Zaimplementuj różne poziomy trudności labiryntów, zaczynając od prostych i zwiększając stopniowo trudność wraz z postępem gracza.
+    7. Efekty Specjalne:
+        ◦ Dodaj efekty specjalne, takie jak mgła, efekty cząsteczkowe czy animacje, aby uczynić grę bardziej atrakcyjną wizualnie.
+    8. Funkcje Multiplayer:
+        ◦ Jeśli jesteś zainteresowany, możesz dodać tryb gry wieloosobowej, w którym gracze mogą rywalizować o wyjście z labiryntu.
+    9. System Nagród:
+        ◦ Umieść nagrody lub osiągnięcia, które gracze mogą zdobyć, aby zwiększyć atrakcyjność gry.
+
+1. Przeszkody, Wrogowie i Pułapki:
+    • Dodaj różne typy przeszkód, wrogów lub pułapek, które utrudnią graczowi przejście przez labirynt.
+    • Skorzystaj z animacji i dźwięków, aby uczynić te elementy bardziej interesującymi i wyzwania bardziej dynamicznymi.
+2. Klucze i Przedmioty:
+    • Umieść klucze lub przedmioty w różnych miejscach labiryntu.
+    • Gracz musi znaleźć odpowiednie przedmioty, aby otworzyć drzwi wyjściowe.
+3. Zróżnicowane Środowisko:
+    • Stwórz różne style sekcji labiryntu z różnymi teksturami i oświetleniem.
+    • Eksperymentuj z architekturą, aby unikalne sekcje przekazywały różne nastroje i trudności.
+4. Elementy RPG:
+    • Zaimplementuj system zdobywania doświadczenia podczas eksploracji labiryntu.
+    • Dodaj umiejętności postaci, które można ulepszać, na przykład zwiększając szybkość, siłę lub zdolności specjalne.
+5. Tryby Gry:
+    • Dodaj różne tryby gry, takie jak tryb czasowy, w którym gracz musi wyjść z labiryntu przed upływem określonego czasu.
+    • Możesz również rozważyć tryby wyzwania, jak na przykład przejście labiryntu bez użycia umiejętności postaci.
+6. Oświetlenie i Atmosfera:
+    • Stwórz atmosferyczne oświetlenie, aby podkreślić różnice między sekcjami labiryntu.
+    • Dodaj efekty dźwiękowe, takie jak echa, skrzypienie drzwi czy dźwięki otoczenia, aby wzmocnić atmosferę.
+7. Poziomy Trudności:
+    • Zdefiniuj różne poziomy trudności, zmieniając strukturę labiryntu, dodając lub usuwając przeszkody, oraz dostosowując liczbę wrogów.
+8. Efekty Specjalne:
+    • Dodaj efekty specjalne, takie jak mgła, efekty cząsteczkowe (np. iskry, dym) czy animacje otwierających się drzwi, aby uczynić grę bardziej wizualnie atrakcyjną.
+9. Funkcje Multiplayer:
+    • Dodaj tryb wieloosobowy, w którym gracze mogą współpracować lub rywalizować o wyjście z labiryntu.
+    • Możesz również rozważyć tryby gry z elementami współpracy lub rywalizacji.
+10. System Nagród:
+    • Umieść nagrody lub osiągnięcia, takie jak odznaczenia za szybkie przejście, odkrywanie ukrytych obszarów itp.
