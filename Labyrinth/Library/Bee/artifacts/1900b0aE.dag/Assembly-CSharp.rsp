@@ -357,6 +357,7 @@
 "Assets/Scripts/MainMenu.cs"
 "Assets/Scripts/MazeGenerator.cs"
 "Assets/Scripts/MazeRender.cs"
+"Assets/Scripts/SettingsMenu.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark02.cs"
