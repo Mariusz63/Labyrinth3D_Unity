@@ -1,7 +1,5 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
 
 [Flags]
@@ -44,7 +42,7 @@ public static class MazeGenerator
                 return WallState.DOWN;
             case WallState.DOWN:
                 return WallState.UP;
-            default: 
+            default:
                 return WallState.LEFT;
         }
     }
@@ -160,14 +158,14 @@ public static class MazeGenerator
         WallState[,] maze = new WallState[width, height];
         WallState initial = WallState.RIGHT | WallState.LEFT | WallState.UP | WallState.DOWN;
 
-        for(int i = 0;i< width;i++)
+        for (int i = 0; i < width; i++)
         {
-            for(int j = 0;j< height; j++)
+            for (int j = 0; j < height; j++)
             {
                 maze[i, j] = initial; //1111
             }
         }
 
-        return ApplyRecursiveBacktracker(maze, width,height);
+        return ApplyRecursiveBacktracker(maze, width, height);
     }
 }

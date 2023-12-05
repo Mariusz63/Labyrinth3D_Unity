@@ -1,12 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MazeRender : MonoBehaviour
 {
 
     [SerializeField]
-    [Range(1,100)]
+    [Range(1, 100)]
     private int width = 10;
 
     [SerializeField]
@@ -87,6 +85,6 @@ public class MazeRender : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
