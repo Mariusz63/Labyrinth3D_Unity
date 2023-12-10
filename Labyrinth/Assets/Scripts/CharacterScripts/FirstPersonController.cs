@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
+//FirstPersonController is singleton
 
 public class FirstPersonController : MonoBehaviour
 {
@@ -141,6 +142,9 @@ public class FirstPersonController : MonoBehaviour
 
     private float rotationX = 0.0f;
 
+    //Singleton
+    public static FirstPersonController instance;
+
     private void OnEnable()
     {
         OnTakeDamage += ApplyDamage;
@@ -154,6 +158,8 @@ public class FirstPersonController : MonoBehaviour
     //set up 
     void Awake()
     {
+        instance = this;
+
         // playerCamera = GetComponent<Camera>();
         playerCamera = Camera.main;
         characterController = GetComponent<CharacterController>();
