@@ -145,6 +145,26 @@ public class FirstPersonController : MonoBehaviour
     //Singleton
     public static FirstPersonController instance;
 
+    // Property to access the singleton instance
+    public static FirstPersonController Instance
+    {
+        get
+        {
+            if (instance == null)
+            {
+                instance = FindObjectOfType<FirstPersonController>();
+
+                if (instance == null)
+                {
+                    GameObject singleton = new GameObject("FirstPersonController");
+                    instance = singleton.AddComponent<FirstPersonController>();
+                }
+            }
+
+            return instance;
+        }
+    }
+
     private void OnEnable()
     {
         OnTakeDamage += ApplyDamage;

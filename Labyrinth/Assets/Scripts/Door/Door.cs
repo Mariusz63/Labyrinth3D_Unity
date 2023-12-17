@@ -1,3 +1,4 @@
+using Assets.Scripts.Door;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
@@ -5,13 +6,14 @@ using UnityEngine;
 
 public class Door : Interacable
 {
-    private bool isOpen;
-    private bool canBeInteractedWith = false;
-    private Animator anim;
+    [Header("Door Properties")]
+    [SerializeField] private bool canBeInteractedWith = true;
+    [SerializeField] public GameObject door;
+    private DoorOpenController mediator;
 
     private void Start()
     {
-        anim = GetComponent<Animator>();
+        mediator = GetComponent<DoorOpenController>();     
     }
 
     public override void OnFocus()
@@ -23,14 +25,10 @@ public class Door : Interacable
     {
         if (canBeInteractedWith)
         {
-            isOpen = !isOpen;
 
-            Vector3 doorTransformDirection = transform.TransformDirection(Vector3.forward);
-            Vector3 playerTransformDirection = FirstPersonController.instance.transform.position - transform.position;
-            float dot = Vector3.Dot(doorTransformDirection, playerTransformDirection);
-
-            anim.SetFloat("dot", dot);
-            anim.SetBool("isOpen", isOpen);
+            print("INTERACT WITH AT " + gameObject.name);
+            // Call ToggleDoor method of the mediator
+            mediator.ToggleDoor();
         }
     }
 
@@ -38,4 +36,6 @@ public class Door : Interacable
     {
 
     }
+
+
 }

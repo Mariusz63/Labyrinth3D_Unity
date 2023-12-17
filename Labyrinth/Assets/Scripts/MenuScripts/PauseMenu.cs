@@ -8,6 +8,29 @@ public class PauseMenu : MonoBehaviour
 
     [SerializeField] private bool isPaused;
 
+    // Singleton instance
+    private static PauseMenu instance;
+
+    // Property to access the singleton instance
+    public static PauseMenu Instance
+    {
+        get
+        {
+            if (instance == null)
+            {
+                instance = FindObjectOfType<PauseMenu>();
+
+                if (instance == null)
+                {
+                    GameObject singleton = new GameObject("PauseMenu");
+                    instance = singleton.AddComponent<PauseMenu>();
+                }
+            }
+
+            return instance;
+        }
+    }
+
     private void Update()
     {
 
