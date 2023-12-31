@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d0199c11aa6f514784c5c69cd8378d8, type: 3}
+  m_Name: PlayFabEditorPrefsSO
+  m_EditorClassIdentifier: 
+  DevAccountEmail: wojaczyna102@gmail.com
+  DevAccountToken: cysqyft6b9o3jswydircihjsxoiinkzyjgyo8h758sj9kgkigjxiqpcckin1nzxr13fmhfm4s4iq3fiznjd9s8f8n716edkwzxowso5oeor4m6en77ki6otx3rywymi1kzwzg8jq75gmk59zuxsmahcm6nfq4uz4tyocp8g58uh1rrhwi3rpeb7tsetozipus91nr9q8
+  AadAuthorization: 
+  SelectedStudio: LabirynthGame
+  SdkPath: Assets/PlayFabSDK
+  EdExPath: 
+  LocalCloudScriptPath: 
+  PanelIsShown: 0
+  curMainMenuIdx: 4
+  curSubMenuIdx: 0

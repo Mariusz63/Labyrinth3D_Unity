@@ -118,6 +118,12 @@
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -define:UNITY_EDITOR_ONLY_COMPILATION
+-r:"Assets/PlayFabEditorExtensions/Editor/Resources/Microsoft.Identity.Client.dll"
+-r:"Assets/PlayFabEditorExtensions/Editor/Resources/Microsoft.IdentityModel.Clients.ActiveDirectory.dll"
+-r:"Assets/PlayFabEditorExtensions/Editor/Resources/Microsoft.IdentityModel.JsonWebTokens.dll"
+-r:"Assets/PlayFabEditorExtensions/Editor/Resources/Microsoft.IdentityModel.Logging.dll"
+-r:"Assets/PlayFabEditorExtensions/Editor/Resources/Microsoft.IdentityModel.Tokens.dll"
+-r:"Assets/PlayFabEditorExtensions/Editor/Resources/System.IdentityModel.Tokens.Jwt.dll"
 -r:"Assets/Plugins/Demigiant/DOTween/DOTween.dll"
 -r:"Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll"
 -r:"F:/UnityGame/2022.3.5f1/Editor/Data/Managed/UnityEditor.Graphs.dll"
