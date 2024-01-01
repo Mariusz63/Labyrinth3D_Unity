@@ -7,6 +7,7 @@ using PlayFab.ClientModels;
 using System;
 using UnityEditor.PackageManager;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class LoginPagePlayfab : MonoBehaviour
 {
@@ -29,6 +30,14 @@ public class LoginPagePlayfab : MonoBehaviour
     [SerializeField] GameObject RecoveryPage;
 
 
+    [Header("Welcome")]
+    [SerializeField] private GameObject WelcomeObject;
+    [SerializeField] private Text WelcomeText;
+
+
+    [SerializeField] private LoginManager loginManager;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -42,20 +51,38 @@ public class LoginPagePlayfab : MonoBehaviour
     }
 
     public void LoginUser() 
-    { 
-        var request = new LoginWithEmailAddressRequest{
+    {
+        var request = new LoginWithEmailAddressRequest {
             Email = EmailLoginInput.text,
             Password = PasswordLoginInput.text,
+
+            InfoRequestParameters = new GetPlayerCombinedInfoRequestParams
+            {
+                GetPlayerProfile = true
+            }
         };
 
-        PlayFabClientAPI.LoginWithEmailAddress(request,OnLoginSuccess, OnError);
+        PlayFabClientAPI.LoginWithEmailAddress(request,OnLoginSucces, OnError);
     }
 
 
-    private void OnLoginSuccess(LoginResult result)
+    private void OnLoginSucces(LoginResult result)
     {
-        MessageText.text ="Login in";
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        string userName = null;
+
+        if(result.InfoResultPayload != null) {
+            userName = result.InfoResultPayload.PlayerProfile.DisplayName;
+        }
+
+        WelcomeObject.SetActive(true);        
+        WelcomeText.text = "Welcome "+ userName;
+
+        if(loginManager != null)
+        {
+            loginManager.playerName = userName;
+        }
+
+        StartCoroutine(LoadNextScene());
     }
 
 
@@ -99,7 +126,12 @@ public class LoginPagePlayfab : MonoBehaviour
             TitleId = "CD2A5",
         };
 
-        PlayFabClientAPI.SendAccountRecoveryEmail(request, OnRecoverySuccess, OnError);
+        PlayFabClientAPI.SendAccountRecoveryEmail(request, OnRecoverySuccess, OnErrorRecovery);
+    }
+
+    private void OnErrorRecovery(PlayFabError error)
+    {
+        MessageText.text = "No Email Found";
     }
 
     private void OnRecoverySuccess(SendAccountRecoveryEmailResult result)
@@ -135,4 +167,12 @@ public class LoginPagePlayfab : MonoBehaviour
 
     }
     #endregion
+
+    IEnumerator LoadNextScene()
+    {
+        yield return new WaitForSeconds(2);
+
+        MessageText.text = "Login in";
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
 }

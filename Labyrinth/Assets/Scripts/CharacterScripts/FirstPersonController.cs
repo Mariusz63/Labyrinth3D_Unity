@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 //FirstPersonController is singleton
 
@@ -13,6 +14,10 @@ public class FirstPersonController : MonoBehaviour
     private bool IsSprinting => canSprint && Input.GetKey(sprintKey);
     private bool ShouldJump => Input.GetKeyDown(jumpKey) && characterController.isGrounded;
     private bool ShoulCrouch => Input.GetKeyDown(crouchKey) && !duringCrouchingAnimation && characterController.isGrounded ;
+
+    [Header("Player informations")]
+    [SerializeField] private LoginManager loginManager;
+    [SerializeField] private Text playerNameTExtHolder;
 
     [Header("Functional options")]
     [SerializeField] private bool canSprint = true;
@@ -194,6 +199,16 @@ public class FirstPersonController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //taking player name
+        if(loginManager== null) // if there aren't any loginManager
+        {
+            loginManager = FindObjectOfType<LoginManager>();
+        }
+        else
+        {
+            playerNameTExtHolder.text = loginManager.playerName;
+        }
+
         if (CanMove)
         {
             HandleMovemnetInput();

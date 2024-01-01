@@ -374,6 +374,7 @@
 "Assets/Scripts/Door/DoorOpenController.cs"
 "Assets/Scripts/Door/DoorRaycast.cs"
 "Assets/Scripts/Door/IDoorMediator.cs"
+"Assets/Scripts/LoginScene/LoginManager.cs"
 "Assets/Scripts/LoginScene/LoginPagePlayfab.cs"
 "Assets/Scripts/MainGameScripts/DungeonGenerator.cs"
 "Assets/Scripts/MainGameScripts/RoomBehaviour.cs"
