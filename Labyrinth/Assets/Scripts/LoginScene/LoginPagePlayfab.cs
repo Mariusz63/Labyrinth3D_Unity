@@ -34,8 +34,10 @@ public class LoginPagePlayfab : MonoBehaviour
     [SerializeField] private GameObject WelcomeObject;
     [SerializeField] private Text WelcomeText;
 
-
+    [Header("Login Manager")]
     [SerializeField] private LoginManager loginManager;
+
+
 
 
     // Start is called before the first frame update
@@ -70,12 +72,14 @@ public class LoginPagePlayfab : MonoBehaviour
     {
         string userName = null;
 
-        if(result.InfoResultPayload != null) {
+        if (result.InfoResultPayload != null) {
             userName = result.InfoResultPayload.PlayerProfile.DisplayName;
+
+
+            WelcomeObject.SetActive(true);
+            WelcomeText.text = "Welcome " + userName;
         }
 
-        WelcomeObject.SetActive(true);        
-        WelcomeText.text = "Welcome "+ userName;
 
         if(loginManager != null)
         {
@@ -143,6 +147,8 @@ public class LoginPagePlayfab : MonoBehaviour
     #region Button Functions
     public void OpenLoginPage()
     {
+        WelcomeObject.SetActive(false);
+
         LoginPage.SetActive(true);
         RegisterPage.SetActive(false);
         RecoveryPage.SetActive(false);

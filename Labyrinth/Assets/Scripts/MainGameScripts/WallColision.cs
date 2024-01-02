@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class WallCollision : MonoBehaviour
 {
+
     // Start is called before the first frame update
     void Start()
     {
-        Collider[] colliders = Physics.OverlapSphere(transform.position, .01f);
+        Collider[] colliders = Physics.OverlapSphere(transform.position, 0.1f);
 
         foreach (Collider collider in colliders)
         {
@@ -18,6 +19,7 @@ public class WallCollision : MonoBehaviour
             }
         }
 
+        // Enable the collider if no "Wall" was found
         GetComponent<Collider>().enabled = true;
     }
 }
