@@ -1,7 +1,9 @@
+using Assets.Scripts.CharacterScripts;
 using System;
 using System.CodeDom.Compiler;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,14 +12,14 @@ using UnityEngine.UI;
 
 public class FirstPersonController : MonoBehaviour
 {
-    public bool CanMove { get; private set; } = true;
+    public bool CanMove { get;  set; } = true;
     private bool IsSprinting => canSprint && Input.GetKey(sprintKey);
     private bool ShouldJump => Input.GetKeyDown(jumpKey) && characterController.isGrounded;
     private bool ShoulCrouch => Input.GetKeyDown(crouchKey) && !duringCrouchingAnimation && characterController.isGrounded ;
 
     [Header("Player informations")]
     [SerializeField] private LoginManager loginManager;
-    [SerializeField] private Text playerNameTExtHolder;
+    [SerializeField] private Text playerNameTextHolder;
 
     [Header("Functional options")]
     [SerializeField] private bool canSprint = true;
@@ -36,6 +38,7 @@ public class FirstPersonController : MonoBehaviour
     [SerializeField] private KeyCode crouchKey = KeyCode.LeftControl;
     [SerializeField] private KeyCode zoomKey = KeyCode.Mouse1;
     [SerializeField] private KeyCode interactKey = KeyCode.Mouse0;
+    [SerializeField] private KeyCode openInventoryKey = KeyCode.I;
 
     [Header("Movement Parameters")]
     [SerializeField] private float walkSpeed = 3.0f;
@@ -48,6 +51,11 @@ public class FirstPersonController : MonoBehaviour
     [SerializeField, Range(1, 10)] private float lookSpeedY = 2.0f;
     [SerializeField, Range(1, 180)] private float upperLookLimit = 80.0f;
     [SerializeField, Range(1, 180)] private float lowerLookLimit = 80.0f;
+
+    [Header("Look Sensitivity Parameters")]
+    [SerializeField, Range(1, 10)] private float lookSensitivityX = 2.0f;
+    [SerializeField, Range(1, 10)] private float lookSensitivityY = 2.0f;
+
 
     [Header("Health Parameters")]
     [SerializeField] private float maxHealth = 100;
@@ -139,6 +147,12 @@ public class FirstPersonController : MonoBehaviour
     [Header("Gravity Parameter")]
     [SerializeField] private float gravity = 30.0f;
 
+    [Header("Inventory Parameters")]
+    [SerializeField] private GameObject inventoryPanel;
+
+    private IPlayerState currentState;
+
+
     private Camera playerCamera;
     private CharacterController characterController;
 
@@ -169,6 +183,11 @@ public class FirstPersonController : MonoBehaviour
             return instance;
         }
     }
+    private void Start()
+    {
+        currentState = new PlayerNormalState(this);
+    }
+
 
     private void OnEnable()
     {
@@ -200,19 +219,22 @@ public class FirstPersonController : MonoBehaviour
     void Update()
     {
         //taking player name
-        if(loginManager== null) // if there aren't any loginManager
+        if (loginManager== null) // if there aren't any loginManager
         {
             loginManager = FindObjectOfType<LoginManager>();
         }
         else
         {
-            playerNameTExtHolder.text = loginManager.playerName;
+            playerNameTextHolder.text = loginManager.playerName;
         }
+
+        currentState.Update();
 
         if (CanMove)
         {
             HandleMovemnetInput();
-            HandleMauseLook();
+            HandleMauseLook(true);
+            HandleOpenInventory();
 
             if (canJump) HandleJump();
             if (canCrouch) HandleCrouch();
@@ -229,6 +251,35 @@ public class FirstPersonController : MonoBehaviour
 
             ApplyFinalMovements();
         }
+    }
+
+    private void HandleOpenInventory()
+    {
+        if (Input.GetKeyDown(openInventoryKey))
+        {
+            ToggleInventory(!inventoryPanel.activeSelf);
+        }
+    }
+
+    private void ToggleInventory(bool enable)
+    {
+        inventoryPanel.SetActive(enable);
+
+        if (enable)
+        {
+            SwitchState(new PlayerInventoryState(this));
+        }
+        else
+        {
+            SwitchState(new PlayerNormalState(this));
+        }
+    }
+
+    private void SwitchState(IPlayerState newState)
+    {
+        currentState.ExitState();
+        currentState = newState;
+        currentState.EnterState();
     }
 
     private void HandleStamina()
@@ -357,13 +408,19 @@ public class FirstPersonController : MonoBehaviour
         moveDirection.y = moveDirectionY;
     }
 
-    private void HandleMauseLook()
+     public void HandleMauseLook(bool canLook)
     {
-        rotationX -= Input.GetAxis("Mouse Y") * lookSpeedY;
+        if (canLook) 
+        {
+         rotationX -= Input.GetAxis("Mouse Y") * lookSensitivityY;
         rotationX = Mathf.Clamp(rotationX, -upperLookLimit, lowerLookLimit);
         playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
-        transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeedX, 0);
+        transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSensitivityX, 0);
+        }
+       
+
     }
+
 
     private void HandleJump()
     {
@@ -522,4 +579,6 @@ public class FirstPersonController : MonoBehaviour
 
         regeneratingStamina = null;
     }
+
+  
 }
