@@ -1,4 +1,3 @@
-using Assets.Scripts.CharacterScripts;
 using System;
 using System.CodeDom.Compiler;
 using System.Collections;
@@ -150,8 +149,6 @@ public class FirstPersonController : MonoBehaviour
     [Header("Inventory Parameters")]
     [SerializeField] private GameObject inventoryPanel;
 
-    private IPlayerState currentState;
-
 
     private Camera playerCamera;
     private CharacterController characterController;
@@ -183,11 +180,6 @@ public class FirstPersonController : MonoBehaviour
             return instance;
         }
     }
-    private void Start()
-    {
-        currentState = new PlayerNormalState(this);
-    }
-
 
     private void OnEnable()
     {
@@ -228,13 +220,11 @@ public class FirstPersonController : MonoBehaviour
             playerNameTextHolder.text = loginManager.playerName;
         }
 
-        currentState.Update();
-
         if (CanMove)
         {
             HandleMovemnetInput();
             HandleMauseLook(true);
-            HandleOpenInventory();
+           // HandleOpenInventory();
 
             if (canJump) HandleJump();
             if (canCrouch) HandleCrouch();
@@ -264,23 +254,9 @@ public class FirstPersonController : MonoBehaviour
     private void ToggleInventory(bool enable)
     {
         inventoryPanel.SetActive(enable);
-
-        if (enable)
-        {
-            SwitchState(new PlayerInventoryState(this));
-        }
-        else
-        {
-            SwitchState(new PlayerNormalState(this));
-        }
     }
 
-    private void SwitchState(IPlayerState newState)
-    {
-        currentState.ExitState();
-        currentState = newState;
-        currentState.EnterState();
-    }
+
 
     private void HandleStamina()
     {

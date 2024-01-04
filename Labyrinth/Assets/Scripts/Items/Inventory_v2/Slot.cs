@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -17,16 +18,16 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
     public TMP_Text thisSlotQuantityText;
 
-    public void initialiseSlot()
+    public void InitialiseSlot()
     {
         thisSlotImage = gameObject.GetComponent<Image>();
         thisSlotQuantityText = transform.GetChild(0).GetComponent<TMP_Text>();
         thisSlotImage.sprite = null;
         thisSlotImage.color = transparent;
-        setItem(null);
+        SetItem(null);
     }
 
-    public void setItem(Item item)
+    public void SetItem(Item item)
     {
         heldItem = item;
 
@@ -34,22 +35,22 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         {
             thisSlotImage.sprite = heldItem.icon;
             thisSlotImage.color = opaque;
-            updateData();
+            UpdateData();
         }
         else
         {
             thisSlotImage.sprite = null;
             thisSlotImage.color = transparent;
-            updateData();
+            UpdateData();
         }
     }
 
-    public Item getItem()
+    public Item GetItem()
     {
         return heldItem;
     }
 
-    public void updateData()
+    public void UpdateData()
     {
         if (heldItem != null)
             thisSlotQuantityText.text = heldItem.currentQuantity.ToString();
@@ -65,5 +66,10 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     public void OnPointerExit(PointerEventData pointerEventData)
     {
         hovered = false;
+    }
+
+    internal bool HasItem()
+    {
+        return heldItem ? true : false;
     }
 }
