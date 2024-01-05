@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 using System;
 using Unity.VisualScripting;
+using System.IO;
 
 public class Inventory : MonoBehaviour
 {
@@ -37,6 +38,10 @@ public class Inventory : MonoBehaviour
     [Header("Crafting")]
     public List<Recipe> itemRecipes = new List<Recipe>();
 
+    [Header("Save/Load")]
+    public List<GameObject> allItemPrefabs = new List<GameObject>();
+    private string saveFileName = "inventorySave.json";
+
     public void Start()
     {
         ToggleInventory(false);
@@ -49,6 +54,13 @@ public class Inventory : MonoBehaviour
         {
             uiSlot.InitialiseSlot();
         }
+
+        LoadInventory();
+    }
+
+    private void OnApplicationQuit()
+    {
+        SaveInventory();
     }
 
     public void Update()
@@ -59,11 +71,11 @@ public class Inventory : MonoBehaviour
         if (Input.GetKeyDown(openInventoryKey))
             ToggleInventory(!inventory.activeInHierarchy);
 
-        if(inventory.activeInHierarchy && Input.GetMouseButtonDown(0))
+        if (inventory.activeInHierarchy && Input.GetMouseButtonDown(0))
         {
             DragInventoryIcon();
         }
-        else if(currentDragSlotIndex != -1 && Input.GetMouseButtonUp(0) || currentDragSlotIndex != -1 && !inventory.activeInHierarchy)
+        else if (currentDragSlotIndex != -1 && Input.GetMouseButtonUp(0) || currentDragSlotIndex != -1 && !inventory.activeInHierarchy)
         {
             DropInventoryIcon();
         }
@@ -73,11 +85,11 @@ public class Inventory : MonoBehaviour
             DropItem();
         }
 
-        for(int i = 1;i<hotbarSlots.Count+1;i++)
+        for (int i = 1; i < hotbarSlots.Count + 1; i++)
         {
             if (Input.GetKeyDown(i.ToString()))//any input within the size range of hotbar
             {
-                EnableHotbarItem(i-1);// because we start from 1
+                EnableHotbarItem(i - 1);// because we start from 1
             }
         }
 
@@ -132,8 +144,16 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    private void AddItemToInventory(Item itemToAdd)
+    private void AddItemToInventory(Item itemToAdd, int overrideIndex = -1)
     {
+        if (overrideIndex != -1)
+        {
+            allInventorySlots[overrideIndex].SetItem(itemToAdd);
+            itemToAdd.gameObject.SetActive(false);
+            allInventorySlots[overrideIndex].UpdateData();
+            return;
+        }
+
         Debug.Log("AddItemToInventory item: " + itemToAdd.name);
         int leftoverQuantity = itemToAdd.currentQuantity;
         Slot openSlot = null;
@@ -182,26 +202,38 @@ public class Inventory : MonoBehaviour
 
     private void ToggleInventory(bool enable)
     {
+        if (inventory == null)
+        {
+            Debug.LogError("Inventory GameObject is not assigned!");
+            return;
+        }
+
         inventory.SetActive(enable);
 
         Cursor.lockState = enable ? CursorLockMode.None : CursorLockMode.Locked;
         Cursor.visible = enable;
 
-        // Disable the rotation of the camera.
-       // Camera.main.GetComponent<FirstPersonLook>().sensitivity = enable ? 0 : 2;
+
+        if (!enable) // Bug fix
+        {
+            foreach (Slot slot in allInventorySlots)
+            {
+                slot.hovered = false;
+            }
+        }
     }
 
     private void DragInventoryIcon()
     {
-        for(int i=0; i< allInventorySlots.Count; i++)
+        for (int i = 0; i < allInventorySlots.Count; i++)
         {
             Slot curSlot = allInventorySlots[i];
-            if(curSlot.hovered && curSlot.HasItem())
+            if (curSlot.hovered && curSlot.HasItem())
             {
                 currentDragSlotIndex = i; //Update  the current drag slot variable
                 currentDraggedItem = curSlot.GetItem();// Get the item from the current slot
                 dragIconImage.sprite = currentDraggedItem.icon;
-                dragIconImage.color = new Color(1,1,1,1);// Make the follow mouse icon opaque (visible)
+                dragIconImage.color = new Color(1, 1, 1, 1);// Make the follow mouse icon opaque (visible)
 
                 curSlot.SetItem(null); // Remove the item from the slot we just picked up the list 
             }
@@ -252,34 +284,45 @@ public class Inventory : MonoBehaviour
 
     private void EnableHotbarItem(int hotbarIndex)
     {
-        foreach(GameObject a in equippableItems)
+        foreach (GameObject a in equippableItems)
         {
             a.SetActive(false);
         }
 
-        Slot hotbarSlot = hotbarSlots[hotbarIndex];
-        selectedItemImage.transform.position = hotbarSlots[hotbarIndex].transform.position;
-
-        if (hotbarSlot.HasItem())
+        if (hotbarIndex >= 0 && hotbarIndex < hotbarSlots.Count)
         {
-            if(hotbarSlot.GetItem().equippableItemIndex!= -1)
+            Slot hotbarSlot = hotbarSlots[hotbarIndex];
+            selectedItemImage.transform.position = hotbarSlots[hotbarIndex].transform.position;
+
+            if (hotbarSlot.HasItem())
             {
-                equippableItems[hotbarSlot.GetItem().equippableItemIndex].SetActive(true);
+                if (hotbarSlot.GetItem().equippableItemIndex != -1)
+                {
+                    int equippableIndex = hotbarSlot.GetItem().equippableItemIndex;
+                    if (equippableIndex >= 0 && equippableIndex < equippableItems.Count)
+                    {
+                        equippableItems[equippableIndex].SetActive(true);
+                    }
+                }
             }
+        }
+        else
+        {
+            Debug.LogError("Invalid hotbar index: " + hotbarIndex);
         }
     }
 
     public void CraftItem(string itemName)
     {
-        foreach(Recipe recipe in itemRecipes)
+        foreach (Recipe recipe in itemRecipes)
         {
-            if(recipe.createdItemPrefab.GetComponent<Item>().name == itemName)
+            if (recipe.createdItemPrefab.GetComponent<Item>().name == itemName)
             {
                 bool haveAllIngredients = true;
-                for(int i = 0;i<recipe.requiredIngredients.Count;i++)
+                for (int i = 0; i < recipe.requiredIngredients.Count; i++)
                 {
-                    if(haveAllIngredients)
-                        haveAllIngredients= HaveIngredient(recipe.requiredIngredients[i].itemName, recipe.requiredIngredients[i].requiredQuantity);
+                    if (haveAllIngredients)
+                        haveAllIngredients = HaveIngredient(recipe.requiredIngredients[i].itemName, recipe.requiredIngredients[i].requiredQuantity);
 
                 }
 
@@ -290,7 +333,7 @@ public class Inventory : MonoBehaviour
                         RemoveIngredient(recipe.requiredIngredients[i].itemName, recipe.requiredIngredients[i].requiredQuantity);
                     }
 
-                    GameObject craftedItem = Instantiate(recipe.createdItemPrefab,dropLocation.position, Quaternion.identity);
+                    GameObject craftedItem = Instantiate(recipe.createdItemPrefab, dropLocation.position, Quaternion.identity);
                     craftedItem.GetComponent<Item>().currentQuantity = recipe.quantityProduced;
 
                     AddItemToInventory(craftedItem.GetComponent<Item>());
@@ -307,20 +350,20 @@ public class Inventory : MonoBehaviour
 
         int remainingQuantity = requiredQuantity;
 
-        foreach(Slot slot in allInventorySlots)
+        foreach (Slot slot in allInventorySlots)
         {
             Item item = slot.GetItem();
 
-            if(item != null && item.name == itemName)
+            if (item != null && item.name == itemName)
             {
-                if(item.currentQuantity>= remainingQuantity)
+                if (item.currentQuantity >= remainingQuantity)
                 {
                     item.currentQuantity -= remainingQuantity;
 
-                    if(item.currentQuantity == 0)
+                    if (item.currentQuantity == 0)
                     {
                         slot.SetItem(null);
-                       // slot.UpdateData();
+                        // slot.UpdateData();
                     }
                     return;
                 }
@@ -337,20 +380,103 @@ public class Inventory : MonoBehaviour
     {
 
         int foundQuantity = 0;
-        foreach(Slot curSlot in allInventorySlots)
+        foreach (Slot curSlot in allInventorySlots)
         {
-            if(curSlot.HasItem() && curSlot.GetItem().name == itemName)
+            if (curSlot.HasItem() && curSlot.GetItem().name == itemName)
             {
                 foundQuantity += curSlot.GetItem().currentQuantity;
 
-                if(foundQuantity >= requiredQuantity)
+                if (foundQuantity >= requiredQuantity)
                 {
                     return true;
                 }
-            
+
             }
         }
 
         return false;
     }
+
+    private void SaveInventory()
+    {
+        InventoryData data = new InventoryData();
+
+        foreach (Slot slot in allInventorySlots)
+        {
+            //if inventory slot have an item -> save it
+            Item item = slot.GetItem();
+            if (item != null)
+            {
+                ItemData itemData = new ItemData(item.name, item.currentQuantity, allInventorySlots.IndexOf(slot));
+                data.slotData.Add(itemData);
+            }
+        }
+
+        //converting items into a text format to store on a .json file
+        string jsonData = JsonUtility.ToJson(data);
+        File.WriteAllText(saveFileName, jsonData);
+    }
+
+    private void LoadInventory()
+    {
+        if (File.Exists(saveFileName))
+        {
+            string jsonData = File.ReadAllText(saveFileName);
+
+            InventoryData data = JsonUtility.FromJson<InventoryData>(jsonData);
+
+            ClearInventory();
+
+            foreach (ItemData itemData in data.slotData)
+            {
+                GameObject itemPrefab = allItemPrefabs.Find(prefab => prefab.GetComponent<Item>().name == itemData.itemName);
+
+                if (itemPrefab != null)
+                {
+                    GameObject createdItem = Instantiate(itemPrefab, dropLocation.position, Quaternion.identity);
+                    Item item = createdItem.GetComponent<Item>();
+
+                    item.currentQuantity = itemData.quantity;
+
+                    AddItemToInventory(item, itemData.slotIndex);
+                }
+            }
+        }
+
+        foreach (Slot slot in allInventorySlots)
+        {
+            slot.UpdateData();
+        }
+    }
+
+    private void ClearInventory()
+    {
+        foreach (Slot slot in allInventorySlots)
+        {
+            slot.SetItem(null);
+        }
+    }
+}
+
+
+[System.Serializable]
+public class ItemData
+{
+    public string itemName;
+    public int quantity;
+    public int slotIndex;
+
+    public ItemData(string itemName, int quantity, int slotIndex)
+    {
+        this.itemName = itemName;
+        this.quantity = quantity;
+        this.slotIndex = slotIndex;
+    }
+}
+
+
+[System.Serializable]
+public class InventoryData
+{
+    public List<ItemData> slotData = new List<ItemData>();
 }
