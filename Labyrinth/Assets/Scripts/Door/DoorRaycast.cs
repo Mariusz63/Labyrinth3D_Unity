@@ -24,6 +24,8 @@ public class DoorRaycast : MonoBehaviour
 
     private void Update()
     {
+        Debug.Log("DoorRaycast " + gameObject.name);
+
         RaycastHit hit;
         Vector3 fwd = transform.TransformDirection(Vector3.forward);
 

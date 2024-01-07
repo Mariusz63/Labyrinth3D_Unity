@@ -65,7 +65,7 @@ public class Inventory : MonoBehaviour
 
     public void Update()
     {
-        ItemRaycast(Input.GetMouseButtonDown(0));
+        ItemRaycast(Input.GetKeyDown(itemTakeKey));
 
 
         if (Input.GetKeyDown(openInventoryKey))

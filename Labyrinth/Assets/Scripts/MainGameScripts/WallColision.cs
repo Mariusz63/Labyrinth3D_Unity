@@ -8,10 +8,12 @@ public class WallCollision : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Collider[] colliders = Physics.OverlapSphere(transform.position, 0.1f);
+        Collider[] colliders = Physics.OverlapSphere(transform.position, 0.2f);
 
         foreach (Collider collider in colliders)
         {
+            Debug.Log("WallCollision : "+ gameObject.name );
+
             if (collider.tag == "Wall")
             {
                 Destroy(gameObject);
