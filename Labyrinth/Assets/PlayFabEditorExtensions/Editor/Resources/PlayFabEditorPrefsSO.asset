@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: PlayFabEditorPrefsSO
   m_EditorClassIdentifier: 
   DevAccountEmail: wojaczyna102@gmail.com
-  DevAccountToken: cysqyft6b9o3jswydircihjsxoiinkzyjgyo8h758sj9kgkigjxiqpcckin1nzxr13fmhfm4s4iq3fiznjd9s8f8n716edkwzxowso5oeor4m6en77ki6otx3rywymi1kzwzg8jq75gmk59zuxsmahcm6nfq4uz4tyocp8g58uh1rrhwi3rpeb7tsetozipus91nr9q8
+  DevAccountToken: 4ra7axqz9zxf49569zhmp6pgue44a7zi1w4quqfhn76ar8it1nacithwghpkgetww8hnfirsewcsz3c3xygaqf7s8m68nb158re6b9txcqijdcmqp1rm4ofskwre379f5p4cda514ts1mi1g5edyys3ukko7b3wsxm9nbduhtrya3gcqifxo6ar5xuqfgib3pzuhct18
   AadAuthorization: 
-  SelectedStudio: LabirynthGame
+  SelectedStudio: _OVERRIDE_
   SdkPath: Assets/PlayFabSDK
   EdExPath: 
   LocalCloudScriptPath: 
   PanelIsShown: 0
-  curMainMenuIdx: 2
-  curSubMenuIdx: 1
+  curMainMenuIdx: 0
+  curSubMenuIdx: 0

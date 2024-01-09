@@ -7,6 +7,8 @@ public class WeaponController : MonoBehaviour
     public GameObject axe;
     public bool canAttack=true;
     public float attackCooldown = 1.0f;
+    public bool isAttacking = false;
+
 
     public void Update()
     {
@@ -21,6 +23,7 @@ public class WeaponController : MonoBehaviour
 
     public void AxeAttack()
     {
+        isAttacking = true;
         canAttack = false;
         Animator anim = axe.GetComponent<Animator>();
         anim.SetTrigger("Attack");
@@ -31,8 +34,15 @@ public class WeaponController : MonoBehaviour
 
     IEnumerator ResetAttackCooldown()
     {
+        ResetAttackBool();
         yield return new WaitForSeconds(attackCooldown);
         canAttack = true;
+    }
+
+    IEnumerator ResetAttackBool()
+    {
+        yield return new WaitForSeconds(1.0f);
+        isAttacking = false;
     }
 
 }

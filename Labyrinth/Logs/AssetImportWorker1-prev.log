@@ -1,0 +1,370 @@
+Using pre-set license
+Built from '2022.3/release' branch; Version is '2022.3.5f1 (9674261d40ee) revision 9860134'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'pl' Physical Memory: 32538 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+F:\UnityGame\2022.3.5f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+F:/UnityGame/Labyrinth3D_Unity/Labyrinth
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+62775
+Successfully changed project path to: F:/UnityGame/Labyrinth3D_Unity/Labyrinth
+F:/UnityGame/Labyrinth3D_Unity/Labyrinth
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [10640] Host "[IP] 192.168.0.133 [Port] 0 [Flags] 2 [Guid] 2591254782 [EditorId] 2591254782 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-SE2TB3I) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [10640] Host "[IP] 192.168.0.133 [Port] 0 [Flags] 2 [Guid] 2591254782 [EditorId] 2591254782 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-SE2TB3I) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 15.45 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.5f1 (9674261d40ee)
+[Subsystems] Discovering subsystems at path F:/UnityGame/2022.3.5f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path F:/UnityGame/Labyrinth3D_Unity/Labyrinth/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3070 Ti (ID=0x2482)
+    Vendor:   NVIDIA
+    VRAM:     8031 MB
+    Driver:   31.0.15.3699
+Initialize mono
+Mono path[0] = 'F:/UnityGame/2022.3.5f1/Editor/Data/Managed'
+Mono path[1] = 'F:/UnityGame/2022.3.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'F:/UnityGame/2022.3.5f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56512
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: F:/UnityGame/2022.3.5f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: F:/UnityGame/2022.3.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002835 seconds.
+- Loaded All Assemblies, in  0.318 seconds
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.252 seconds
+Domain Reload Profiling: 568ms
+	BeginReloadAssembly (71ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (60ms)
+	LoadAllAssembliesAndSetupDomain (135ms)
+		LoadAssemblies (74ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (127ms)
+			TypeCache.Refresh (126ms)
+				TypeCache.ScanAssembly (117ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (252ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (170ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (1ms)
+			ProcessInitializeOnLoadAttributes (112ms)
+			ProcessInitializeOnLoadMethodAttributes (47ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+Assembly 'Library/ScriptAssemblies/Assembly-CSharp.dll' will not be loaded due to errors:
+Unable to resolve reference 'PlayFab'. Is the assembly missing or incompatible with the current platform?
+Reference validation can be disabled in the Plugin Inspector.
+Assembly 'Library/ScriptAssemblies/Assembly-CSharp-Editor.dll' will not be loaded due to errors:
+Reference has errors 'Assembly-CSharp'.
+Symbol file LoadedFromMemory doesn't match image F:\UnityGame\Labyrinth3D_Unity\Labyrinth\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\UnityGame\Labyrinth3D_Unity\Labyrinth\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.696 seconds
+Refreshing native plugins compatible for Editor in 1.59 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.493 seconds
+Domain Reload Profiling: 1193ms
+	BeginReloadAssembly (111ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (14ms)
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (40ms)
+	LoadAllAssembliesAndSetupDomain (497ms)
+		LoadAssemblies (313ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (253ms)
+			TypeCache.Refresh (240ms)
+				TypeCache.ScanAssembly (230ms)
+			ScanForSourceGeneratedMonoScriptInfo (11ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (497ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (354ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (41ms)
+			ProcessInitializeOnLoadAttributes (292ms)
+			ProcessInitializeOnLoadMethodAttributes (14ms)
+			AfterProcessingInitializeOnLoad (2ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
+Refreshing native plugins compatible for Editor in 1.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3168 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 33 unused Assets / (56.9 KB). Loaded Objects now: 3652.
+Memory consumption went from 132.2 MB to 132.1 MB.
+Total: 2.383200 ms (FindLiveObjects: 0.193600 ms CreateObjectMapping: 0.087800 ms MarkObjects: 2.004900 ms  DeleteObjects: 0.095800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/DoorRaycast.cs: eefbedbca0147a77be0132f8003007ba -> 
+  custom:scripting/monoscript/fileName/PlayFabMultiplayerAPI.cs: 34848b9a138ae167a5b85fc9f3ccd842 -> 
+  custom:scripting/monoscript/fileName/MainMenu.cs: c093076ba5753d7bec74a8a751ffb653 -> 
+  custom:scripting/monoscript/fileName/PlayFabInsightsModels.cs: 6a3c0c1d2b4771c7d224adcb36e56cb0 -> 
+  custom:scripting/monoscript/fileName/PlayFabDataModels.cs: 42b2e8e010eb03a6648b2d2a04225234 -> 
+  custom:scripting/monoscript/fileName/PlayFabEconomyModels.cs: a9a6a3236994ec6b1464ca9518995a5a -> 
+  custom:scripting/monoscript/fileName/PlayFabAuthenticationAPI.cs: f50e209b6be997946cae5b316f55713e -> 
+  custom:scripting/monoscript/fileName/SimpleJson.cs: 855d86f49aa943edd40f6188dc63dbd9 -> 
+  custom:scripting/monoscript/fileName/SkewTextExample.cs: c142d02d70a129e0533975f7c2f96956 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/precompiled-assembly-types:PlayFabEditorExtensions: fe81a0a2154bc8a9b27f7622ed0da764 -> 
+  custom:scripting/monoscript/fileName/PlayFabMatchmakerAPI.cs: e14b76ccafd8230a4606ff7d6877767f -> 
+  custom:scripting/monoscript/fileName/TMP_TextEventHandler.cs: f5cd9d5a43bfefc8f4fec80e6de896a4 -> 
+  custom:scripting/monoscript/fileName/TextMeshProFloatingText.cs: 92608fa4a6315cd0786d82205e77b697 -> 
+  custom:scripting/monoscript/fileName/PlayFabClientModels.cs: b677dbcc5ef14b2f0359ef89247b44a5 -> 
+  custom:scripting/monoscript/fileName/VertexZoom.cs: 650ab1e81d40126e3edcf737cce646e4 -> 
+  custom:scripting/monoscript/fileName/PlayFabMultiplayerInstanceAPI.cs: 67845ebfb33e6631f1f3d1ec911b744f -> 
+  custom:scripting/monoscript/fileName/PlayFabAuthenticationInstanceAPI.cs: f6e486125757169c79863b7261990e7d -> 
+  custom:scripting/monoscript/fileName/WeaponController.cs: 1e8fe3ef77ed017d21141c9af5f0dcb9 -> 
+  custom:scripting/monoscript/fileName/PlayFabDataAPI.cs: 0a5b88cb020a8a1fa75d4ef31d9b479a -> 
+  custom:scripting/monoscript/fileName/wsaReflectionExtensions.cs: 661e58620f13781f280e165c7f19d79d -> 
+  custom:scripting/monoscript/fileName/LoginPagePlayfab.cs: b61cb1e3f8395effccff4a38b9b3e497 -> 
+  custom:scripting/monoscript/fileName/PlayFabEditorVersion.cs: f07e06639134220604398f74c829bc51 -> 
+  custom:scripting/monoscript/fileName/VertexShakeA.cs: 63ec564c588058369499638dd899e05b -> 
+  custom:scripting/monoscript/fileName/PlayFabGroupsModels.cs: 58aad2bb46b2ba57eb455bfe6a218488 -> 
+  custom:scripting/monoscript/fileName/TMP_ExampleScript_01.cs: a9d4be556104ff54e7d240529b3e01dc -> 
+  custom:scripting/monoscript/fileName/PlayFabEventsInstanceAPI.cs: 162136f8a84bbabae5d447d476d525e7 -> 
+  custom:scripting/monoscript/fileName/PauseMenu.cs: f5f409f6f97ee1b3b146d50574a93841 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/TMP_TextEventCheck.cs: 13505d917eab5868c435e0c2986dadfa -> 
+  custom:scripting/monoscript/fileName/SavePrefs.cs: 777efa58f5f80d195e91559cc0929efb -> 
+  custom:scripting/monoscript/fileName/TMP_TextSelector_B.cs: ba2be21a7486d37b1011342977a2e49d -> 
+  custom:scripting/monoscript/fileName/PlayFabExperimentationInstanceAPI.cs: 8805959d1498121b04c9184d808a3387 -> 
+  custom:scripting/monoscript/fileName/Benchmark01.cs: 2d3e2cd961730ab95f139a49a673bace -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/PlayFabProfilesModels.cs: 47c64d8d0aa8252a0d392a1ea552be8f -> 
+  custom:scripting/monoscript/fileName/PlayFabMatchmakerModels.cs: 5f1bc62fc5caa403c562d2ac25550b00 -> 
+  custom:scripting/monoscript/fileName/TitleInternalDataViewer.cs: 271abc41e1e8a0e8ebccab2d920e5e50 -> 
+  custom:scripting/monoscript/fileName/Util.cs: 8015ac0dad4fc64e239d39528d5e47e7 -> 
+  custom:scripting/monoscript/fileName/PlayFabApiSettings.cs: a9c4533076c59d2e4b547c2e6b99cec8 -> 
+  custom:scripting/precompiled-assembly-types:System.IdentityModel.Tokens.Jwt: b2e9fdc6f781149ec9b47850dd8615f2 -> 
+  custom:scripting/monoscript/fileName/PlayFabHTTP.cs: 2f8b6a021a8b8b4f77c5faa1b63e8917 -> 
+  custom:scripting/monoscript/fileName/PlayFabDeviceUtil.cs: 1461b4a6603a7872d95026e8b589d4fb -> 
+  custom:scripting/monoscript/fileName/PlayFabAuthenticationContext.cs: c4dd3c3d3b638ec86f1c58df05539e64 -> 
+  custom:scripting/monoscript/fileName/Benchmark02.cs: 5640963252ce70910e726415f869ced6 -> 
+  custom:scripting/monoscript/fileName/TitleInternalDataEditor.cs: 1fde4edfbd75cdb0c63ce6a5e508ae16 -> 
+  custom:scripting/precompiled-assembly-types:Microsoft.IdentityModel.JsonWebTokens: 02e7e5daeb58b82c7e4b3d9f763d7a11 -> 
+  custom:scripting/monoscript/fileName/DoorOpenController.cs: cc364d50823329f4e80248ad8b3d4e16 -> 
+  custom:scripting/monoscript/fileName/DropdownSample.cs: 0a92251794e5f10400149f96c3c59e5d -> 
+  custom:scripting/monoscript/fileName/PlayFabAuthenticationModels.cs: 2da483c2876605e93bf25d605c0bba9a -> 
+  custom:scripting/monoscript/fileName/PlayFabGroupsAPI.cs: bf80a81faea09e7c1d27235f77167fd1 -> 
+  custom:scripting/monoscript/fileName/ProgressBar.cs: b78ba676aa5f6181625dce3195cf6b58 -> 
+  custom:scripting/monoscript/fileName/WarpTextExample.cs: 2663459c266363641981c7d17b698d7f -> 
+  custom:scripting/monoscript/fileName/PlayFabEditorHelper.cs: 6b9b95646bc84a2962883c95544be62e -> 
+  custom:scripting/monoscript/fileName/WallColision.cs: b6a35a9f72a49529e164a86210070fc5 -> 
+  custom:scripting/precompiled-assembly-types:Microsoft.IdentityModel.Logging: de7316fd588ab946f906fab28456f25f -> 
+  custom:scripting/monoscript/fileName/PlayFabEditorToolsMenu.cs: c17e4f9f0ca4dee7f03c0c514a33d2f6 -> 
+  custom:scripting/monoscript/fileName/PlayFabWebRequest.cs: 49b1ef2a3466ac13982175a70f37e89d -> 
+  custom:scripting/monoscript/fileName/PlayFabServerAPI.cs: ea5d2c8f2a75dab389eaf72488ce848c -> 
+  custom:scripting/monoscript/fileName/PlayFabEditorHelpMenu.cs: 2fde3f416933b62b8fe8c624de5804cd -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:scripting/monoscript/fileName/PlayFabLocalizationAPI.cs: f335f99cd83dca15c72b44c2c26b839a -> 
+  custom:scripting/monoscript/fileName/PlayFabInsightsInstanceAPI.cs: c2194d2697d2afa1e8061cee01a52049 -> 
+  custom:scripting/monoscript/fileName/PlayFabEditorHeader.cs: 3a43d6d68c6621844d209ba18fe1cedb -> 
+  custom:scripting/monoscript/fileName/PlayFabEditorApi.cs: 726025dfafba9424d2a3c1146dfd48bf -> 
+  custom:scripting/monoscript/fileName/TestInteractable.cs: ccd2ece31603fade7e6baa31bda7d6a9 -> 
+  custom:scripting/monoscript/fileName/PlayFabProfilesInstanceAPI.cs: 6677ae36cb8429fb461b29c337dec383 -> 
+  custom:scripting/monoscript/fileName/Recipe.cs: d1c337e39821b9257a1b69d99b90722a -> 
+  custom:scripting/monoscript/fileName/AnimationButton.cs: ad710db1df0f604d768e18f8b89f4660 -> 
+  custom:scripting/monoscript/fileName/PlayFabGuiFieldHelper.cs: f5ab3056840490649e18a42dafb6e151 -> 
+  custom:scripting/monoscript/fileName/PlayFabLogger.cs: 1b047873a91cda1c9b2a7602cedb36b0 -> 
+  custom:scripting/monoscript/fileName/PlayFabExperimentationAPI.cs: d05ce92f9d5a159aa8c28abed091c120 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/Inventory.cs: 8dbde1ba8757970dd5a83b7204957cf8 -> 
+  custom:scripting/monoscript/fileName/PlayFabEditorSDKTools.cs: 3f4ffef37353b86b1481ef2fba8ed493 -> 
+  custom:scripting/monoscript/fileName/PlayFabErrors.cs: de02591e65199242e9f227f63357f176 -> 
+  custom:scripting/monoscript/fileName/ChatController.cs: 876d5ccae6e345dd5d9450eb0a748f16 -> 
+  custom:scripting/monoscript/fileName/PlayFabInsightsAPI.cs: 8f3bc76c59c00dbb0084bdb6409db70a -> 
+  custom:scripting/monoscript/fileName/RoomBehaviour.cs: b5303d262098a55a4bdbbb7080d4471d -> 
+  custom:scripting/monoscript/fileName/SettingsMenu.cs: 5998da193e19bba9a80245c370fc3810 -> 
+  custom:scripting/monoscript/fileName/TextMeshSpawner.cs: 76f28e2ddb031571e6ec62b018f65fa8 -> 
+  custom:scripting/monoscript/fileName/TeleType.cs: 31fa97821c4c70f157ec81d507aa6b62 -> 
+  custom:scripting/monoscript/fileName/PluginManager.cs: 94e0e61b647fcb04a6f0cde7fc7c24dc -> 
+  custom:scripting/monoscript/fileName/PlayFabCloudScriptAPI.cs: a1575ad87da026e08997bde20b67043a -> 
+  custom:scripting/monoscript/fileName/ISerializerPlugin.cs: db2dc8d538ba1642805db07582c9029e -> 
+  custom:scripting/monoscript/fileName/Benchmark04.cs: 32220b148620e52aa81c13a114862bf4 -> 
+  custom:scripting/monoscript/fileName/TitleDataViewer.cs: 6a6ab10e7950f160d9a605214fafb075 -> 
+  custom:scripting/monoscript/fileName/PlayFabLocalizationModels.cs: 2817325a74821ce80538df52f573d616 -> 
+  custom:scripting/monoscript/fileName/TitleDataEditor.cs: 2e54eadd6f6e26f65d4146b487a73139 -> 
+  custom:scripting/monoscript/fileName/CameraFollow.cs: 4d40febd3babf6a62525199d4bfdee55 -> 
+  custom:scripting/monoscript/fileName/CharacterRotator.cs: de1bf83a2e7472cf926544414243a493 -> 
+  custom:scripting/monoscript/fileName/PlayFabCloudScriptModels.cs: 072a527da0867cc0c932c4b8ac4d9096 -> 
+  custom:scripting/monoscript/fileName/SingletonMonoBehaviour.cs: 90647cc400823b41df847a6cbfc29026 -> 
+  custom:scripting/monoscript/fileName/Door.cs: 89da75c00dd875a160d70ad71da9a2a1 -> 
+  custom:scripting/monoscript/fileName/PlayFabDataInstanceAPI.cs: 364868ebd7c586a7199d5d4228adfb27 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/PluginContractKey.cs: bcc15b64f54d6485039a8ce57d9e7bc0 -> 
+  custom:scripting/monoscript/fileName/SurfaceManager.cs: fe964705bccbe288c14a65aef0b5de52 -> 
+  custom:scripting/monoscript/fileName/IPlayFabPlugin.cs: b9076b2f819bdb303fd146e3b99597d2 -> 
+  custom:scripting/monoscript/fileName/ITransportPlugin.cs: 6184160baa795b10999c52b272d25223 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/TMP_PhoneNumberValidator.cs: 7c3049f481e464c6a9a15dee56c3126f -> 
+  custom:scripting/precompiled-assembly-types:PlayFabSDKEditor: 52bc147d88f09a5f5c01458d94d91dfe -> 
+  custom:scripting/monoscript/fileName/PlayFabEventsAPI.cs: 8ae0d265dc52730f96eec2e05852b32e -> 
+  custom:scripting/monoscript/fileName/DamageTest.cs: 3dfdb3532752b86883f1ef54eb7d1559 -> 
+  custom:scripting/monoscript/fileName/PlayFabAdminInstanceAPI.cs: c2391df7c6797437ab9ad2ff7d037b5c -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/EnvMapAnimator.cs: 1b4f61c17e4b7283c3ac351aacff9d26 -> 
+  custom:scripting/monoscript/fileName/ShaderPropAnimator.cs: 55ce425812446482e623ff2695c94cb2 -> 
+  custom:scripting/monoscript/fileName/PlayFabDataGatherer.cs: 581c02bff3f5e76e3c6c1881400b296a -> 
+  custom:scripting/monoscript/fileName/UI.cs: d07df4d819b415cd4fccffe4dffe6eb8 -> 
+  custom:scripting/monoscript/fileName/CameraView.cs: 85707035483a7393a4e135ad5ea80206 -> 
+  custom:scripting/monoscript/fileName/TopDownController.cs: 83566c569b255b0b724896658fb05abb -> 
+  custom:scripting/monoscript/fileName/PlayFabLocalizationInstanceAPI.cs: 43c490198f7e43c3b9a7edd8e579928a -> 
+  custom:scripting/monoscript/fileName/PlayFabEventsModels.cs: b2225034b33a406f3c7f294399286b15 -> 
+  custom:scripting/monoscript/fileName/PlayFabUnityHttp.cs: ec426f6be84579ed54744a43ed1ac2eb -> 
+  custom:scripting/monoscript/fileName/SimpleScript.cs: 454caab0c6c050f29b39d82e1d66d0fa -> 
+  custom:scripting/monoscript/fileName/PlayFabEditorDataMenu.cs: b169b9000c63808096d6b5ff35cca40c -> 
+  custom:scripting/monoscript/fileName/ObjectSpin.cs: 2b96bb2079dd7fa5108d981627a28e1e -> 
+  custom:scripting/monoscript/fileName/PlayFabEditorDataService.cs: eab0baad9b90324f7d0b128b551625a0 -> 
+  custom:scripting/monoscript/fileName/PlayFabEditorAuthenticate.cs: 1538362712a15e36c1943cac2cf89108 -> 
+  custom:scripting/monoscript/fileName/Slot.cs: 8523d638a3e38c3baee2d55812834b78 -> 
+  custom:scripting/monoscript/fileName/IDoorMediator.cs: 66fa67ec3676ef2877769c5080af07ff -> 
+  custom:scripting/monoscript/fileName/PlayFabEditorModels.cs: 284c06fe4d2fe4f0a37d93a5c701a87d -> 
+  custom:scripting/monoscript/fileName/PlayFabEconomyInstanceAPI.cs: 6f55925cff6a57ffbf28be5edfe1bdc6 -> 
+  custom:scripting/monoscript/fileName/PlayFabMultiplayerModels.cs: b041df1addba417628ec975a5efd203a -> 
+  custom:scripting/monoscript/fileName/CharacterFootsteps.cs: 0305f37bda92aa5173f2f3cd9c48234e -> 
+  custom:scripting/monoscript/fileName/CameraController.cs: 34b6be4e23ce86dc89786916c5983296 -> 
+  custom:scripting/monoscript/fileName/PlayFabClientAPI.cs: 8d8aa15d5f7a94a4953e60d58ac0634b -> 
+  custom:scripting/monoscript/fileName/PlayFabProfilesAPI.cs: 2ee5e88f12c2d9e61cb4293d9d35ebf3 -> 
+  custom:scripting/monoscript/fileName/PlayFabEditor.cs: f5f3e5f752111913a551e405f2eed612 -> 
+  custom:scripting/monoscript/fileName/TMP_TextInfoDebugTool.cs: 3f1709cfb2cc628169113a35b5e9be3f -> 
+  custom:scripting/monoscript/fileName/PlayFabClientInstanceAPI.cs: c7ce64f3e390e6052ea9b542426fbe08 -> 
+  custom:scripting/monoscript/fileName/DemoUI.cs: 90b1a0613055caccc187c40b6d3dae1c -> 
+  custom:scripting/monoscript/fileName/Interacable.cs: 4fceee65d1b569ab85cd567127207b6e -> 
+  custom:scripting/precompiled-assembly-types:Microsoft.IdentityModel.Clients.ActiveDirectory: ee6e1b470196ea1768b290d45352a67a -> 
+  custom:scripting/monoscript/fileName/PlayFabAdminModels.cs: 6f36fc7ec8f45103dafb9badab7d6d1b -> 
+  custom:scripting/monoscript/fileName/ScreenTimeTracker.cs: 2e71a78b89eb7e3a4c6728a0cbe37be7 -> 
+  custom:scripting/monoscript/fileName/PlayFabEditorPackages.cs: 001fa306fbdd5455a7ab996fdbe04c0c -> 
+  custom:scripting/monoscript/fileName/MinimapScript.cs: 1f66fb1a2123c78ffdbdd4f969cad613 -> 
+  custom:scripting/monoscript/fileName/PlayFabEditorMenu.cs: 5acf997c8856f3eded572d687c244293 -> 
+  custom:scripting/monoscript/fileName/ISettingStrategy.cs: 3bb4725566bbf5c141a66eb6857d41b2 -> 
+  custom:scripting/monoscript/fileName/PlayFabEditorSettings.cs: 28242a55e0293b78c17001faba715e9b -> 
+  custom:scripting/monoscript/fileName/PlayFabCloudScriptInstanceAPI.cs: ea9f39f8e08b5e6fe85ab3f24d087e7e -> 
+  custom:scripting/monoscript/fileName/PlayFabHelp.cs: a283fae385c049b6ba0e91ab1c433485 -> 
+  custom:scripting/monoscript/fileName/TMP_TextSelector_A.cs: 347309a09d56e367b188a6978f75b424 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/PlayFabEconomyAPI.cs: a60f6999d41b07cda0459337d0ca7291 -> 
+  custom:scripting/monoscript/fileName/PlayFabSharedSettings.cs: f010a9391a721aa7d66395d22da23113 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/CustomInspectors.cs: c1443685b51d40e771150153552185c0 -> 
+  custom:scripting/monoscript/fileName/VertexJitter.cs: d27eb5498e48714a66aece98da065133 -> 
+  custom:scripting/monoscript/fileName/ISerializer.cs: adef23f1e4e1b00141570c09474ab08d -> 
+  custom:scripting/monoscript/fileName/SubMenuComponent.cs: 51bb22192e0f00be90560904059094ed -> 
+  custom:scripting/monoscript/fileName/LoadPrefs.cs: 61c342791c7d2c27929475d76dab7a76 -> 
+  custom:scripting/monoscript/fileName/PlayFabEditorPrefsSO.cs: 20785d22b0ded6a9d5da293547c8ec28 -> 
+  custom:scripting/monoscript/fileName/PlayFabEditorHttp.cs: c6cb600be15fe37f5e0cc0ba071e4e72 -> 
+  custom:scripting/monoscript/fileName/TextConsoleSimulator.cs: 33fc311abb20b5b0ed8f00e4d86b574e -> 
+  custom:scripting/monoscript/fileName/VertexColorCycler.cs: 5f984ca91cf3609293aecc6bc5641572 -> 
+  custom:scripting/monoscript/fileName/SharedModels.cs: 07a4877cb8b8729ad86d832c75f70ff8 -> 
+  custom:scripting/monoscript/fileName/TMP_FrameRateCounter.cs: 46f655df8cb483ac5958307137b1585a -> 
+  custom:scripting/monoscript/fileName/VertexShakeB.cs: a6f78c4fcda1a29a1a1c1baefedba9e7 -> 
+  custom:scripting/monoscript/fileName/CollisionDetection.cs: d89557bf49db63198ddd4e6892a809bc -> 
+  custom:scripting/monoscript/fileName/PlayFabEditorUtils.cs: e91fa520f2399ceddf1caf193d8d970f -> 
+  custom:scripting/monoscript/fileName/Item.cs: edfd25bbe8f561e55c7415f9c3adacfe -> 
+  custom:scripting/precompiled-assembly-types:PlayFab: 6a4df80c7439b25158c50c4dfbd55882 -> 
+  custom:scripting/monoscript/fileName/EditorCoroutine.cs: d2dd948e461a88299dfda8fadf8221bd -> ecfde58f5f2276c57435e977dfe7f74c
+  custom:scripting/monoscript/fileName/TMP_UiFrameRateCounter.cs: b01021aea19247f14a98ab338907956a -> 
+  custom:scripting/monoscript/fileName/FirstPersonController.cs: 56e02201b590c9fca68136bcadeee061 -> 
+  custom:scripting/monoscript/fileName/PlayFabSettings.cs: 5549f6ca9fdca124f9977f7e0f5964c9 -> 
+  custom:scripting/monoscript/fileName/Log.cs: 39ceb91527504e73ac9a1e5d1db76057 -> 
+  custom:scripting/monoscript/fileName/FootstepTrigger.cs: 4d526713680fb0e45269abafc18faef2 -> 
+  custom:scripting/monoscript/fileName/PlayFabExperimentationModels.cs: 35f92f3c178edd4c4259f2bc6662709f -> 
+  custom:scripting/monoscript/fileName/TMPro_InstructionOverlay.cs: b626d2270e6ebd5c4311585c18b58d8d -> 
+  custom:scripting/monoscript/fileName/TMP_DigitValidator.cs: ac02af96215ae3951a3cce9e1a8c6085 -> 
+  custom:scripting/monoscript/fileName/PlayFabAdminAPI.cs: a6d7f3058663a8b1ccf119755842c0ad -> 
+  custom:scripting/monoscript/fileName/LoginManager.cs: 3cc846c0f24614c9b07317b57418305e -> 
+  custom:scripting/precompiled-assembly-types:Microsoft.IdentityModel.Tokens: b2746c3e99381878092c690e2f6d34a4 -> 
+  custom:scripting/monoscript/fileName/PlayFabServerInstanceAPI.cs: 9b7888be0debdf5311b7fb126b2fcdf5 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: 3b1536bae09cf10c38b2909674ae1b3c -> 
+  custom:scripting/monoscript/fileName/Benchmark01_UGUI.cs: 6148cfe2627b7708298f301788144139 -> 
+  custom:scripting/monoscript/fileName/IPlayFabHttp.cs: 7a40f1b87c35f9ca151945819b45d5a3 -> 
+  custom:scripting/monoscript/fileName/PlayFabGroupsInstanceAPI.cs: a0f8a25b5d66789cb57ef754590e3286 -> 
+  custom:scripting/monoscript/fileName/MakeSharedSettingsObj.cs: 17c13584ae2e423cd38b65a073bd5d0a -> 
+  custom:scripting/monoscript/fileName/DungeonGenerator.cs: 2faf107a883cf3c4687857cdf901f41c -> 
+  custom:scripting/monoscript/fileName/MenuController.cs: f98156acb6c9b62b4aff1540a104a198 -> 
+  custom:scripting/monoscript/fileName/PlayFabServerModels.cs: e9e4300bc804b2893c06259448e8662b -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: f46dd23868b0ae872afab4029fd622ea -> 
+  custom:scripting/monoscript/fileName/PlayFabMatchmakerInstanceAPI.cs: 10a633468c609a4fde7dddfb015cd91a -> 
+  custom:scripting/monoscript/fileName/PlayFabEvents.cs: dc81aad4e5a9b1e1056a6bb87184338b -> 
+  custom:scripting/monoscript/fileName/Benchmark03.cs: 17cc87e0529ac71d909a946afb47a274 -> 
+  custom:scripting/precompiled-assembly-types:Microsoft.Identity.Client: 968ca8f9be22c7900a2ace00cb2039f1 -> 

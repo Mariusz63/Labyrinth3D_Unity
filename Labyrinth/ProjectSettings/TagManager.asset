@@ -9,6 +9,7 @@ TagManager:
   - Footsteps/WOOD
   - Wall
   - InteractiveObject
+  - Enemy
   layers:
   - Default
   - TransparentFX

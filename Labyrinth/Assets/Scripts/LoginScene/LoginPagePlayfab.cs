@@ -8,6 +8,7 @@ using System;
 using UnityEditor.PackageManager;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using PlayFab.PfEditor.EditorModels;
 
 public class LoginPagePlayfab : MonoBehaviour
 {
@@ -68,7 +69,7 @@ public class LoginPagePlayfab : MonoBehaviour
     }
 
 
-    private void OnLoginSucces(LoginResult result)
+    private void OnLoginSucces(PlayFab.ClientModels.LoginResult result)
     {
         string userName = null;
 
@@ -110,7 +111,7 @@ public class LoginPagePlayfab : MonoBehaviour
         PlayFabClientAPI.RegisterPlayFabUser(request, OnRegisterSucces, OnError);
     }
 
-    private void OnError(PlayFabError error)
+    private void OnError(PlayFab.PlayFabError error)
     {
         MessageText.text = error.ErrorMessage;
         Debug.Log(error.GenerateErrorReport());
@@ -133,7 +134,7 @@ public class LoginPagePlayfab : MonoBehaviour
         PlayFabClientAPI.SendAccountRecoveryEmail(request, OnRecoverySuccess, OnErrorRecovery);
     }
 
-    private void OnErrorRecovery(PlayFabError error)
+    private void OnErrorRecovery(PlayFab.PlayFabError error)
     {
         MessageText.text = "No Email Found";
     }
