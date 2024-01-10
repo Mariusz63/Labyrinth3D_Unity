@@ -375,6 +375,8 @@
 "Assets/FXIFIED/common/Scripts/Quit.cs"
 "Assets/Scripts/CharacterScripts/CollisionDetection.cs"
 "Assets/Scripts/CharacterScripts/DamageTest.cs"
+"Assets/Scripts/CharacterScripts/DialogueManager.cs"
+"Assets/Scripts/CharacterScripts/DialogueTrigger.cs"
 "Assets/Scripts/CharacterScripts/FirstPersonController.cs"
 "Assets/Scripts/CharacterScripts/Interacable.cs"
 "Assets/Scripts/CharacterScripts/MinimapScript.cs"
