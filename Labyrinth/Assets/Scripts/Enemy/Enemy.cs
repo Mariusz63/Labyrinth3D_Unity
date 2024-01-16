@@ -1,17 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor.UI;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] public float currentHealth = 100f;
+    [SerializeField] private float currentHealth = 100f;
     [SerializeField] public float spiderDamage = 25f;
     [SerializeField] public Animator animator;
+    [SerializeField] public Slider healthBar;
      GameObject player;
 
     [SerializeField] private List<ItemDrop> itemDrops = new List<ItemDrop>();
     // Reference to the player's Health script
     private HealthPresenter healthPresenter;
+
+    private void Update()
+    {
+        healthBar.value = currentHealth;
+    }
 
     public void TakeDamage(float damage, GameObject player)
     {
@@ -42,7 +50,8 @@ public class Enemy : MonoBehaviour
         }
         else
         {
-            AudioManager.instance.Play("Damage");
+            FindObjectOfType<AudioManager>().Play("Damage");
+           // AudioManager.instance.Play("Damage");
             animator.SetTrigger("damage");
         }
     }

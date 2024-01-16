@@ -398,6 +398,7 @@
 "Assets/Scripts/Enemy/ChaseState.cs"
 "Assets/Scripts/Enemy/Enemy.cs"
 "Assets/Scripts/Enemy/IdleState.cs"
+"Assets/Scripts/Enemy/LookAtPlayer.cs"
 "Assets/Scripts/Enemy/PatrolState.cs"
 "Assets/Scripts/Enemy/RandomSpawner.cs"
 "Assets/Scripts/Enemy/Spider.cs"
