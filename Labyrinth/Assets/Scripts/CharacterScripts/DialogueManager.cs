@@ -17,6 +17,8 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] public float typingSpeed = 0.05f;
     [SerializeField] public float turnSpeed = 2f;
 
+    [SerializeField] public KeyCode interaction = KeyCode.T;
+
     public List<DialogueString> dialogueList;
 
     [Header("Player")]
@@ -30,6 +32,7 @@ public class DialogueManager : MonoBehaviour
         dialogueParent.SetActive(false);
         playerCamera = Camera.main.transform;
     }
+
 
     public void DialogueStart(List<DialogueString> dialogueStrings, Transform npcTransform)
     {

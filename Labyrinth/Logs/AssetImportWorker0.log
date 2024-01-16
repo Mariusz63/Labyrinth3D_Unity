@@ -15,7 +15,7 @@ F:/UnityGame/Labyrinth3D_Unity/Labyrinth
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-61991
+55054
 Successfully changed project path to: F:/UnityGame/Labyrinth3D_Unity/Labyrinth
 F:/UnityGame/Labyrinth3D_Unity/Labyrinth
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,11 +49,11 @@ F:/UnityGame/Labyrinth3D_Unity/Labyrinth
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [30568] Host "[IP] 192.168.0.133 [Port] 0 [Flags] 2 [Guid] 1578418637 [EditorId] 1578418637 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-SE2TB3I) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [25792] Host "[IP] 192.168.0.133 [Port] 0 [Flags] 2 [Guid] 2608621857 [EditorId] 2608621857 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-SE2TB3I) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [30568] Host "[IP] 192.168.0.133 [Port] 0 [Flags] 2 [Guid] 1578418637 [EditorId] 1578418637 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-SE2TB3I) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [25792] Host "[IP] 192.168.0.133 [Port] 0 [Flags] 2 [Guid] 2608621857 [EditorId] 2608621857 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-SE2TB3I) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 7.08 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 191.14 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.5f1 (9674261d40ee)
 [Subsystems] Discovering subsystems at path F:/UnityGame/2022.3.5f1/Editor/Data/Resources/UnitySubsystems
@@ -69,46 +69,46 @@ Initialize mono
 Mono path[0] = 'F:/UnityGame/2022.3.5f1/Editor/Data/Managed'
 Mono path[1] = 'F:/UnityGame/2022.3.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'F:/UnityGame/2022.3.5f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56008
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56896
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: F:/UnityGame/2022.3.5f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: F:/UnityGame/2022.3.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004922 seconds.
-- Loaded All Assemblies, in  0.273 seconds
+Registered in 0.003008 seconds.
+- Loaded All Assemblies, in  0.911 seconds
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.206 seconds
-Domain Reload Profiling: 480ms
-	BeginReloadAssembly (87ms)
+- Finished resetting the current domain, in  0.209 seconds
+Domain Reload Profiling: 1120ms
+	BeginReloadAssembly (92ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (25ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (45ms)
-	LoadAllAssembliesAndSetupDomain (106ms)
-		LoadAssemblies (87ms)
+	RebuildCommonClasses (184ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (37ms)
+	LoadAllAssembliesAndSetupDomain (591ms)
+		LoadAssemblies (92ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (103ms)
-			TypeCache.Refresh (102ms)
-				TypeCache.ScanAssembly (94ms)
+		AnalyzeDomain (588ms)
+			TypeCache.Refresh (588ms)
+				TypeCache.ScanAssembly (264ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (207ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (209ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (160ms)
+		SetupLoadedEditorAssemblies (165ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (6ms)
+			InitializePlatformSupportModulesInManaged (7ms)
 			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (110ms)
-			ProcessInitializeOnLoadMethodAttributes (39ms)
+			ProcessInitializeOnLoadAttributes (100ms)
+			ProcessInitializeOnLoadMethodAttributes (52ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -118,8 +118,8 @@ Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image F:\UnityGame\Labyrinth3D_Unity\Labyrinth\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image F:\UnityGame\Labyrinth3D_Unity\Labyrinth\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.639 seconds
-Refreshing native plugins compatible for Editor in 2.01 ms, found 3 plugins.
+- Loaded All Assemblies, in  3.781 seconds
+Refreshing native plugins compatible for Editor in 1.89 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Package Manager log level set to [2]
@@ -127,764 +127,453 @@ Package Manager log level set to [2]
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.624 seconds
-Domain Reload Profiling: 1263ms
-	BeginReloadAssembly (110ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (15ms)
-	RebuildCommonClasses (25ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (32ms)
-	LoadAllAssembliesAndSetupDomain (460ms)
-		LoadAssemblies (249ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (274ms)
-			TypeCache.Refresh (255ms)
-				TypeCache.ScanAssembly (243ms)
-			ScanForSourceGeneratedMonoScriptInfo (16ms)
-			ResolveRequiredComponents (3ms)
-	FinalizeReload (624ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (495ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (4ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (42ms)
-			ProcessInitializeOnLoadAttributes (401ms)
-			ProcessInitializeOnLoadMethodAttributes (43ms)
-			AfterProcessingInitializeOnLoad (2ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (5ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.14 seconds
-Refreshing native plugins compatible for Editor in 2.59 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3431 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 54 unused Assets / (1.3 MB). Loaded Objects now: 3903.
-Memory consumption went from 151.0 MB to 149.7 MB.
-Total: 2.432300 ms (FindLiveObjects: 0.178600 ms CreateObjectMapping: 0.080700 ms MarkObjects: 1.963300 ms  DeleteObjects: 0.208900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 2234030.018724 seconds.
-  path: Assets/Prefabs/DungeonPrefabs/DoorParent.prefab
-  artifactKey: Guid(83dea768caf10f644b7975ff0626f83d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/DungeonPrefabs/DoorParent.prefab using Guid(83dea768caf10f644b7975ff0626f83d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd3cd1f851697b1dda7350fd99ae3006') in 0.299503 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 32
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Prefabs/DungeonPrefabs/Up Door Variant.prefab
-  artifactKey: Guid(ee131ba4bb28b0848ac718c683dc439c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/DungeonPrefabs/Up Door Variant.prefab using Guid(ee131ba4bb28b0848ac718c683dc439c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '239329982806b399e1dc73a08d3e0732') in 0.027765 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 84
-========================================================================
-Received Import Request.
-  Time since last request: 10.715440 seconds.
-  path: Assets/Scripts/CharacterScripts/DialogueTrigger.cs
-  artifactKey: Guid(d9f232358f42df84f8b43d44100a84d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/CharacterScripts/DialogueTrigger.cs using Guid(d9f232358f42df84f8b43d44100a84d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8966dd26d8df95ab50addec5f3e14502') in 0.000416 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image F:\UnityGame\Labyrinth3D_Unity\Labyrinth\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image F:\UnityGame\Labyrinth3D_Unity\Labyrinth\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.664 seconds
-Refreshing native plugins compatible for Editor in 2.01 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.844 seconds
-Domain Reload Profiling: 1508ms
-	BeginReloadAssembly (138ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (36ms)
-	RebuildCommonClasses (23ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (27ms)
-	LoadAllAssembliesAndSetupDomain (464ms)
-		LoadAssemblies (235ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (297ms)
-			TypeCache.Refresh (290ms)
-				TypeCache.ScanAssembly (274ms)
-			ScanForSourceGeneratedMonoScriptInfo (3ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (845ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (498ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
-			SetLoadedEditorAssemblies (4ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (47ms)
-			ProcessInitializeOnLoadAttributes (424ms)
-			ProcessInitializeOnLoadMethodAttributes (16ms)
-			AfterProcessingInitializeOnLoad (2ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
-Refreshing native plugins compatible for Editor in 1.99 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3381 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 44 unused Assets / (1.3 MB). Loaded Objects now: 3916.
-Memory consumption went from 144.5 MB to 143.2 MB.
-Total: 2.241600 ms (FindLiveObjects: 0.192600 ms CreateObjectMapping: 0.092200 ms MarkObjects: 1.791500 ms  DeleteObjects: 0.164100 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 32.832653 seconds.
-  path: Assets/Scripts/CharacterScripts/DialogueManager.cs
-  artifactKey: Guid(da5d2919170e895469bca717e65d5c72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/CharacterScripts/DialogueManager.cs using Guid(da5d2919170e895469bca717e65d5c72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e21b7bd8f570c0aedc0d59bb69490c31') in 0.003549 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image F:\UnityGame\Labyrinth3D_Unity\Labyrinth\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image F:\UnityGame\Labyrinth3D_Unity\Labyrinth\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.646 seconds
-Refreshing native plugins compatible for Editor in 2.18 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.871 seconds
-Domain Reload Profiling: 1517ms
-	BeginReloadAssembly (121ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (33ms)
-	RebuildCommonClasses (40ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (26ms)
-	LoadAllAssembliesAndSetupDomain (450ms)
-		LoadAssemblies (243ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (265ms)
-			TypeCache.Refresh (259ms)
-				TypeCache.ScanAssembly (241ms)
-			ScanForSourceGeneratedMonoScriptInfo (2ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (871ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (495ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (6ms)
-			SetLoadedEditorAssemblies (6ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (51ms)
-			ProcessInitializeOnLoadAttributes (414ms)
-			ProcessInitializeOnLoadMethodAttributes (16ms)
-			AfterProcessingInitializeOnLoad (2ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (10ms)
-Refreshing native plugins compatible for Editor in 7.00 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3382 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 44 unused Assets / (1.3 MB). Loaded Objects now: 3921.
-Memory consumption went from 144.5 MB to 143.3 MB.
-Total: 3.125000 ms (FindLiveObjects: 0.239200 ms CreateObjectMapping: 0.180800 ms MarkObjects: 2.475600 ms  DeleteObjects: 0.228500 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image F:\UnityGame\Labyrinth3D_Unity\Labyrinth\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image F:\UnityGame\Labyrinth3D_Unity\Labyrinth\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.645 seconds
-Refreshing native plugins compatible for Editor in 2.06 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.831 seconds
-Domain Reload Profiling: 1477ms
-	BeginReloadAssembly (168ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (63ms)
-	RebuildCommonClasses (21ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (38ms)
-	LoadAllAssembliesAndSetupDomain (410ms)
-		LoadAssemblies (226ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (243ms)
-			TypeCache.Refresh (238ms)
-				TypeCache.ScanAssembly (223ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (832ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (494ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (4ms)
-			SetLoadedEditorAssemblies (2ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (44ms)
-			ProcessInitializeOnLoadAttributes (422ms)
-			ProcessInitializeOnLoadMethodAttributes (19ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (10ms)
-Refreshing native plugins compatible for Editor in 3.94 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3383 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 44 unused Assets / (1.3 MB). Loaded Objects now: 3925.
-Memory consumption went from 144.8 MB to 143.5 MB.
-Total: 2.748900 ms (FindLiveObjects: 0.222400 ms CreateObjectMapping: 0.146300 ms MarkObjects: 2.213200 ms  DeleteObjects: 0.166100 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 446.120319 seconds.
-  path: Assets/FXIFIED/Stylized VFX Free Pack/Resources/Textures/FX_Ring_AB.tga
-  artifactKey: Guid(d0ddf8f6f5836bd42a91b287488ef5c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FXIFIED/Stylized VFX Free Pack/Resources/Textures/FX_Ring_AB.tga using Guid(d0ddf8f6f5836bd42a91b287488ef5c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f65a6912d693338789391e4e91127530') in 0.083022 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.193034 seconds.
-  path: Assets/FXIFIED/Stylized VFX Free Pack/Resources/Textures/FX_TX_Cross_AB.tga
-  artifactKey: Guid(8d9e1742881918846a64509bd1f30202) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FXIFIED/Stylized VFX Free Pack/Resources/Textures/FX_TX_Cross_AB.tga using Guid(8d9e1742881918846a64509bd1f30202) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c896f0154bde54fd9f1184df628ade10') in 0.022020 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/FXIFIED/Stylized VFX Free Pack/Resources/Textures/FX_TX_Decal_AC.tga
-  artifactKey: Guid(5c50e1ba3ed5f5c4dbe90796225e9657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FXIFIED/Stylized VFX Free Pack/Resources/Textures/FX_TX_Decal_AC.tga using Guid(5c50e1ba3ed5f5c4dbe90796225e9657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b27ce4baa4dc69911c2dfd92dafef35') in 0.023319 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.006966 seconds.
-  path: Assets/FXIFIED/Stylized VFX Free Pack/Resources/Textures/FX_TX_Ember_AC.tga
-  artifactKey: Guid(adfef38fc91840e4d87ad3dbe876c14e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FXIFIED/Stylized VFX Free Pack/Resources/Textures/FX_TX_Ember_AC.tga using Guid(adfef38fc91840e4d87ad3dbe876c14e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92ad4ac2deccf2d082679d57f6a67a9b') in 0.013383 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.008608 seconds.
-  path: Assets/FXIFIED/Stylized VFX Free Pack/Resources/Textures/FX_TX_Ember_AE.tga
-  artifactKey: Guid(dee0554825b0ae6439d70bdf7e2e4a9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FXIFIED/Stylized VFX Free Pack/Resources/Textures/FX_TX_Ember_AE.tga using Guid(dee0554825b0ae6439d70bdf7e2e4a9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4153289193751d92bca54566545710f') in 0.016522 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.011732 seconds.
-  path: Assets/FXIFIED/Stylized VFX Free Pack/Resources/Textures/FX_TX_PowerUp_Atlas.psd
-  artifactKey: Guid(270d775bc4c09e545a00b84d23ba5879) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FXIFIED/Stylized VFX Free Pack/Resources/Textures/FX_TX_PowerUp_Atlas.psd using Guid(270d775bc4c09e545a00b84d23ba5879) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93f8954621839e3a10a430c35cba465b') in 0.030018 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/FXIFIED/Stylized VFX Free Pack/Resources/Textures/FX_TX_Ring_AC.tga
-  artifactKey: Guid(2865482c6a168f743ac55bd2f1975df4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FXIFIED/Stylized VFX Free Pack/Resources/Textures/FX_TX_Ring_AC.tga using Guid(2865482c6a168f743ac55bd2f1975df4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27674f823074c1cdee09996e4a44f532') in 0.016497 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.013638 seconds.
-  path: Assets/FXIFIED/Stylized VFX Free Pack/Resources/Textures/FX_TX_Star_AA.tga
-  artifactKey: Guid(0c308d0d141d8e54ab3d590993a6a3d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FXIFIED/Stylized VFX Free Pack/Resources/Textures/FX_TX_Star_AA.tga using Guid(0c308d0d141d8e54ab3d590993a6a3d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79fcd2027a268b95c02b5b5503d29b6b') in 0.015761 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.022341 seconds.
-  path: Assets/FXIFIED/common/Extras/FXified-logo_02.png
-  artifactKey: Guid(41f7ecfdc39cfaa4c9f5e84177fa5f74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FXIFIED/common/Extras/FXified-logo_02.png using Guid(41f7ecfdc39cfaa4c9f5e84177fa5f74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b89b4e3e762bb19fad428448d7b6bead') in 0.048450 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image F:\UnityGame\Labyrinth3D_Unity\Labyrinth\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image F:\UnityGame\Labyrinth3D_Unity\Labyrinth\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.736 seconds
-Refreshing native plugins compatible for Editor in 1.98 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.771 seconds
-Domain Reload Profiling: 1507ms
-	BeginReloadAssembly (179ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (71ms)
-	RebuildCommonClasses (28ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (30ms)
-	LoadAllAssembliesAndSetupDomain (489ms)
-		LoadAssemblies (309ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (245ms)
-			TypeCache.Refresh (240ms)
-				TypeCache.ScanAssembly (227ms)
-			ScanForSourceGeneratedMonoScriptInfo (2ms)
-			ResolveRequiredComponents (3ms)
-	FinalizeReload (772ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (442ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (6ms)
-			SetLoadedEditorAssemblies (6ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (54ms)
-			ProcessInitializeOnLoadAttributes (355ms)
-			ProcessInitializeOnLoadMethodAttributes (19ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (8ms)
-Refreshing native plugins compatible for Editor in 1.92 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3382 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 44 unused Assets / (1.3 MB). Loaded Objects now: 3931.
-Memory consumption went from 144.6 MB to 143.3 MB.
-Total: 2.449300 ms (FindLiveObjects: 0.180100 ms CreateObjectMapping: 0.087300 ms MarkObjects: 2.016700 ms  DeleteObjects: 0.164000 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image F:\UnityGame\Labyrinth3D_Unity\Labyrinth\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image F:\UnityGame\Labyrinth3D_Unity\Labyrinth\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.635 seconds
-Refreshing native plugins compatible for Editor in 4.02 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.771 seconds
-Domain Reload Profiling: 1406ms
-	BeginReloadAssembly (131ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (35ms)
-	RebuildCommonClasses (21ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (22ms)
-	LoadAllAssembliesAndSetupDomain (453ms)
-		LoadAssemblies (259ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (259ms)
-			TypeCache.Refresh (252ms)
-				TypeCache.ScanAssembly (241ms)
-			ScanForSourceGeneratedMonoScriptInfo (2ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (771ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (457ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (4ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (43ms)
-			ProcessInitializeOnLoadAttributes (385ms)
-			ProcessInitializeOnLoadMethodAttributes (17ms)
-			AfterProcessingInitializeOnLoad (4ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (9ms)
-Refreshing native plugins compatible for Editor in 1.89 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3383 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 44 unused Assets / (1.3 MB). Loaded Objects now: 3935.
-Memory consumption went from 144.8 MB to 143.6 MB.
-Total: 2.169100 ms (FindLiveObjects: 0.170300 ms CreateObjectMapping: 0.071700 ms MarkObjects: 1.777300 ms  DeleteObjects: 0.149000 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image F:\UnityGame\Labyrinth3D_Unity\Labyrinth\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image F:\UnityGame\Labyrinth3D_Unity\Labyrinth\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.563 seconds
-Refreshing native plugins compatible for Editor in 2.06 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.795 seconds
-Domain Reload Profiling: 1358ms
+- Finished resetting the current domain, in  0.782 seconds
+Domain Reload Profiling: 4563ms
 	BeginReloadAssembly (123ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (35ms)
-	RebuildCommonClasses (24ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (21ms)
-	LoadAllAssembliesAndSetupDomain (388ms)
-		LoadAssemblies (204ms)
+		CreateAndSetChildDomain (15ms)
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (3588ms)
+		LoadAssemblies (3393ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (242ms)
-			TypeCache.Refresh (236ms)
-				TypeCache.ScanAssembly (224ms)
-			ScanForSourceGeneratedMonoScriptInfo (2ms)
+		AnalyzeDomain (268ms)
+			TypeCache.Refresh (252ms)
+				TypeCache.ScanAssembly (239ms)
+			ScanForSourceGeneratedMonoScriptInfo (13ms)
 			ResolveRequiredComponents (3ms)
-	FinalizeReload (795ms)
+	FinalizeReload (783ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (453ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (6ms)
-			SetLoadedEditorAssemblies (5ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (49ms)
-			ProcessInitializeOnLoadAttributes (374ms)
-			ProcessInitializeOnLoadMethodAttributes (16ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (8ms)
-Refreshing native plugins compatible for Editor in 1.95 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3383 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 44 unused Assets / (1.3 MB). Loaded Objects now: 3939.
-Memory consumption went from 144.8 MB to 143.6 MB.
-Total: 2.108500 ms (FindLiveObjects: 0.168500 ms CreateObjectMapping: 0.073300 ms MarkObjects: 1.713600 ms  DeleteObjects: 0.152000 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image F:\UnityGame\Labyrinth3D_Unity\Labyrinth\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image F:\UnityGame\Labyrinth3D_Unity\Labyrinth\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.567 seconds
-Refreshing native plugins compatible for Editor in 4.12 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.726 seconds
-Domain Reload Profiling: 1294ms
-	BeginReloadAssembly (112ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (29ms)
-	RebuildCommonClasses (23ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (19ms)
-	LoadAllAssembliesAndSetupDomain (404ms)
-		LoadAssemblies (221ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (237ms)
-			TypeCache.Refresh (228ms)
-				TypeCache.ScanAssembly (218ms)
-			ScanForSourceGeneratedMonoScriptInfo (2ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (727ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (415ms)
+		SetupLoadedEditorAssemblies (675ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (4ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (39ms)
-			ProcessInitializeOnLoadAttributes (355ms)
-			ProcessInitializeOnLoadMethodAttributes (13ms)
+			BeforeProcessingInitializeOnLoad (38ms)
+			ProcessInitializeOnLoadAttributes (614ms)
+			ProcessInitializeOnLoadMethodAttributes (14ms)
 			AfterProcessingInitializeOnLoad (2ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (8ms)
-Refreshing native plugins compatible for Editor in 2.14 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (5ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.12 seconds
+Refreshing native plugins compatible for Editor in 3.14 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3383 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 44 unused Assets / (1.3 MB). Loaded Objects now: 3943.
-Memory consumption went from 144.8 MB to 143.6 MB.
-Total: 2.260200 ms (FindLiveObjects: 0.171600 ms CreateObjectMapping: 0.079800 ms MarkObjects: 1.851300 ms  DeleteObjects: 0.156500 ms)
+Unloading 3495 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 54 unused Assets / (1.3 MB). Loaded Objects now: 3971.
+Memory consumption went from 155.7 MB to 154.4 MB.
+Total: 2.761000 ms (FindLiveObjects: 0.210700 ms CreateObjectMapping: 0.149400 ms MarkObjects: 2.150600 ms  DeleteObjects: 0.249400 ms)
 
-Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/PlayerIdleState.cs: bca0ca5ecdb64c9eca101586dbfd4597 -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:scripting/monoscript/fileName/PlayerStateMachine.cs: acdbdc852f646c7b3363183db7c7ed52 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/PlayerInput.cs: 593afd13dce9ea6f043a6fe213c456f9 -> 
+  custom:scripting/monoscript/fileName/PlayerWalkState.cs: 6a2da550acbabcfce9971588c716a7b9 -> 
+  custom:scripting/monoscript/fileName/IState.cs: 642de9dcb655280be4ef0e7decc9c2a5 -> 7c9ac2e53b292d01497d551b0f0e43bc
+  custom:scripting/monoscript/fileName/FPController.cs: 5a86497a029a2f1d1d890372b452887c -> 
+  custom:scripting/monoscript/fileName/PlayerJumpState.cs: 84becc66979a7f4d477a6d1f5c9efef6 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image F:\UnityGame\Labyrinth3D_Unity\Labyrinth\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image F:\UnityGame\Labyrinth3D_Unity\Labyrinth\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.602 seconds
-Refreshing native plugins compatible for Editor in 2.12 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.793 seconds
-Domain Reload Profiling: 1394ms
-	BeginReloadAssembly (139ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (33ms)
-	RebuildCommonClasses (23ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (20ms)
-	LoadAllAssembliesAndSetupDomain (409ms)
-		LoadAssemblies (240ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (243ms)
-			TypeCache.Refresh (238ms)
-				TypeCache.ScanAssembly (227ms)
-			ScanForSourceGeneratedMonoScriptInfo (2ms)
-			ResolveRequiredComponents (3ms)
-	FinalizeReload (793ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (446ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (4ms)
-			SetLoadedEditorAssemblies (4ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (46ms)
-			ProcessInitializeOnLoadAttributes (376ms)
-			ProcessInitializeOnLoadMethodAttributes (15ms)
-			AfterProcessingInitializeOnLoad (2ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
-Refreshing native plugins compatible for Editor in 2.07 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3383 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 44 unused Assets / (1.3 MB). Loaded Objects now: 3947.
-Memory consumption went from 144.8 MB to 143.6 MB.
-Total: 2.369200 ms (FindLiveObjects: 0.183900 ms CreateObjectMapping: 0.088200 ms MarkObjects: 1.913800 ms  DeleteObjects: 0.182500 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Received Import Request.
+  Time since last request: 154670.463294 seconds.
+  path: Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Prefabs/Sword7_Red.prefab
+  artifactKey: Guid(0029002b2fada3d4497680a36b12ae3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Prefabs/Sword7_Red.prefab using Guid(0029002b2fada3d4497680a36b12ae3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c4215c81ffe398cba7368c6bc8c1636') in 0.226743 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
 ========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image F:\UnityGame\Labyrinth3D_Unity\Labyrinth\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image F:\UnityGame\Labyrinth3D_Unity\Labyrinth\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.603 seconds
-Refreshing native plugins compatible for Editor in 1.94 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.851 seconds
-Domain Reload Profiling: 1454ms
-	BeginReloadAssembly (129ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (38ms)
-	RebuildCommonClasses (30ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (22ms)
-	LoadAllAssembliesAndSetupDomain (413ms)
-		LoadAssemblies (221ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (253ms)
-			TypeCache.Refresh (248ms)
-				TypeCache.ScanAssembly (235ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (851ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (471ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
-			SetLoadedEditorAssemblies (2ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (49ms)
-			ProcessInitializeOnLoadAttributes (398ms)
-			ProcessInitializeOnLoadMethodAttributes (15ms)
-			AfterProcessingInitializeOnLoad (2ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (9ms)
-Refreshing native plugins compatible for Editor in 2.40 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3383 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 44 unused Assets / (1.3 MB). Loaded Objects now: 3951.
-Memory consumption went from 144.8 MB to 143.6 MB.
-Total: 2.971900 ms (FindLiveObjects: 0.180900 ms CreateObjectMapping: 0.096700 ms MarkObjects: 2.486600 ms  DeleteObjects: 0.206400 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Prefabs/Sword4_Red.prefab
+  artifactKey: Guid(54c8c9f221349f5478057c6aa027be04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Prefabs/Sword4_Red.prefab using Guid(54c8c9f221349f5478057c6aa027be04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2a9b19562651e9492c38bc5c8e9f4a3') in 0.047646 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Prefabs/Sword5_Blue.prefab
+  artifactKey: Guid(8dd1278bd62135046a6827f7b8d6b129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Prefabs/Sword5_Blue.prefab using Guid(8dd1278bd62135046a6827f7b8d6b129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd602561bdc96b7aecd0a50948812c6c1') in 0.041514 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Prefabs/Sword7_Blue.prefab
+  artifactKey: Guid(446537a5e4bab814fb6203cbd4680b71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Prefabs/Sword7_Blue.prefab using Guid(446537a5e4bab814fb6203cbd4680b71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f86c80121237332e010c21e1c9b0b613') in 0.051738 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword5/Textures/Sword5_Albedo_Yellow.png
+  artifactKey: Guid(bed41c2925118f040bf3f7ab302ec19c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword5/Textures/Sword5_Albedo_Yellow.png using Guid(bed41c2925118f040bf3f7ab302ec19c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6fc2546054ed65c4f075c9c1d7d653b') in 0.028597 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword1
+  artifactKey: Guid(e812f7da3c00cc2489911f470551a7a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword1 using Guid(e812f7da3c00cc2489911f470551a7a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c015ad4a2ed6119c3ba91b818f9c4ea2') in 0.008649 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Prefabs/Sword6_Blue.prefab
+  artifactKey: Guid(0292f5558481790458c5adcc2b168185) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Prefabs/Sword6_Blue.prefab using Guid(0292f5558481790458c5adcc2b168185) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5efbb3c57905586a0a6b7f3e1e33e9c') in 0.023609 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword6/Textures/Sword6_Albedo_Yellow.png
+  artifactKey: Guid(32066919bf586ea4eab37b3635830975) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword6/Textures/Sword6_Albedo_Yellow.png using Guid(32066919bf586ea4eab37b3635830975) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d30f393c877742e37fa7400628871b1') in 0.024472 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword1/Textures/Sword1_Metallic.png
+  artifactKey: Guid(9643e59550d809440966e8232bcfa56d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword1/Textures/Sword1_Metallic.png using Guid(9643e59550d809440966e8232bcfa56d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce85342f03d0809d2e8d0cbaf70285bb') in 0.036562 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Prefabs/Sword2_Red.prefab
+  artifactKey: Guid(d7e67ff5daed3494fbe6d1904e928589) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Prefabs/Sword2_Red.prefab using Guid(d7e67ff5daed3494fbe6d1904e928589) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '804050a552d08975282255057ed15932') in 0.025552 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword5/Sword5_Material_Blue.mat
+  artifactKey: Guid(8f16b6367f3f3e145971c36ba0e2ae5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword5/Sword5_Material_Blue.mat using Guid(8f16b6367f3f3e145971c36ba0e2ae5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '307579baa1438d5b2f3e202090567dac') in 0.056507 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Prefabs/Sword7_Green.prefab
+  artifactKey: Guid(5ffa21eac0be47c409e0bab4eea08790) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Prefabs/Sword7_Green.prefab using Guid(5ffa21eac0be47c409e0bab4eea08790) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3e3968ecfb9fa0fadd346475e04c303') in 0.025789 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword6/Textures/Sword6_Normal.png
+  artifactKey: Guid(8dd119cecaa26034c82b3331eb8e23b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword6/Textures/Sword6_Normal.png using Guid(8dd119cecaa26034c82b3331eb8e23b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1471630d70db839dc4c3a0624de03adc') in 0.032653 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Prefabs/Sword4_Blue.prefab
+  artifactKey: Guid(5676bdababfc9c144824b1050aa60674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Prefabs/Sword4_Blue.prefab using Guid(5676bdababfc9c144824b1050aa60674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0783b607e92d8584bf23525c5f34a05') in 0.018703 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword1/Textures/Sword1_Albedo_Gold.png
+  artifactKey: Guid(eb1d4f04b03d83249ab8fa1746e34c20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword1/Textures/Sword1_Albedo_Gold.png using Guid(eb1d4f04b03d83249ab8fa1746e34c20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0fbf3874074713badd1d401e8ec921e') in 0.018414 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword4/Sword4_Material_Yellow.mat
+  artifactKey: Guid(5bf9745e4cdf3544db118edd03429750) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword4/Sword4_Material_Yellow.mat using Guid(5bf9745e4cdf3544db118edd03429750) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66c1ea13b4b607a3132b5c4441fc2a20') in 0.040648 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword7/Sword7_Material_Blue.mat
+  artifactKey: Guid(0f6ed5b953c1cc644943552d45f09db0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword7/Sword7_Material_Blue.mat using Guid(0f6ed5b953c1cc644943552d45f09db0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '210608fa9fc00e50cdbb0a0a07d49c9d') in 0.031288 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword3/Sword3_FBX.fbx
+  artifactKey: Guid(97a8b82f3d87b034caeb16764385b8bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword3/Sword3_FBX.fbx using Guid(97a8b82f3d87b034caeb16764385b8bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a485b33da7315ce0a1d63aeef5f9d667') in 0.059302 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword6/Sword6_Material_Red.mat
+  artifactKey: Guid(9b468e68d2e1d36499dc32c5a138ab91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword6/Sword6_Material_Red.mat using Guid(9b468e68d2e1d36499dc32c5a138ab91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f43e1e634dff06f8eb11f9e0704d81d') in 0.044511 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword5/Sword5_Material_Yellow.mat
+  artifactKey: Guid(76faf25298597ac4f85cf3a33d6304da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword5/Sword5_Material_Yellow.mat using Guid(76faf25298597ac4f85cf3a33d6304da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9031939fe0452ada8ad680ec83831f3b') in 0.019909 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword4/Textures/Sword4_Albedo_Blue.png
+  artifactKey: Guid(d6189ccc35ed2dc49af89b4c2b27eb8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword4/Textures/Sword4_Albedo_Blue.png using Guid(d6189ccc35ed2dc49af89b4c2b27eb8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '724dc359791e7c2015b880aee654b6af') in 0.014913 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword2/Textures/Sword2_Albedo_Green.png
+  artifactKey: Guid(933587b953e40c3459577bbb32bb1a85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword2/Textures/Sword2_Albedo_Green.png using Guid(933587b953e40c3459577bbb32bb1a85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb4728c590fc52fcc4c37f84bda97913') in 0.016876 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword4/Sword4_Material_Blue.mat
+  artifactKey: Guid(33a16add35bcca3468a326685219fd7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword4/Sword4_Material_Blue.mat using Guid(33a16add35bcca3468a326685219fd7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4fe39961d96a163891bdb28fc79314e') in 0.018983 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword6/Sword6_FBX.fbx
+  artifactKey: Guid(b614443038ba99640be88e740d27ec25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword6/Sword6_FBX.fbx using Guid(b614443038ba99640be88e740d27ec25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60eac01d9b362e1d90be73b5f4e1f486') in 0.019283 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword6/Textures/Sword6_Metallic.png
+  artifactKey: Guid(c853b2ec5cbcf31429ac6dacac6cd609) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword6/Textures/Sword6_Metallic.png using Guid(c853b2ec5cbcf31429ac6dacac6cd609) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a85c04b90d1eca8566edad50892051ce') in 0.018987 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword2/Textures/Sword2_Albedo_Red.png
+  artifactKey: Guid(0a8084c66d85afe41b585bb035c0baaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword2/Textures/Sword2_Albedo_Red.png using Guid(0a8084c66d85afe41b585bb035c0baaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0386698a5b5b3df3fac40295d3cf9ace') in 0.016960 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword5/Textures/Sword5_Normal.png
+  artifactKey: Guid(68040293e57befc46851434aecc5d729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword5/Textures/Sword5_Normal.png using Guid(68040293e57befc46851434aecc5d729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02d65ff5de8ffb63071848b250b03ec6') in 0.018048 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword2/Sword2_Material_Yellow.mat
+  artifactKey: Guid(ee4b8981a11ace3479f8bef2e17e984c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword2/Sword2_Material_Yellow.mat using Guid(ee4b8981a11ace3479f8bef2e17e984c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e743c95d421c6ecd898753d613485713') in 0.019318 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword1/Sword1_Material_Silver.mat
+  artifactKey: Guid(fa5baed6be3065a459482872af5d2796) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword1/Sword1_Material_Silver.mat using Guid(fa5baed6be3065a459482872af5d2796) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94566065e22a6671f6dada6660d4eb95') in 0.019805 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword7/Textures/Sword7_Normal.png
+  artifactKey: Guid(353a8a644cc9d5040a3000605a59f101) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword7/Textures/Sword7_Normal.png using Guid(353a8a644cc9d5040a3000605a59f101) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51b0e2749adcfdde07b20c4e4acd076c') in 0.018348 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword1/Textures/Sword1_Albedo_Silver.png
+  artifactKey: Guid(78b98abe328cb624e876de012f40f5ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword1/Textures/Sword1_Albedo_Silver.png using Guid(78b98abe328cb624e876de012f40f5ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e8935c09e8b5fbdeeebb2ebf8410174') in 0.022353 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword2/Textures/Sword2_Metallic.png
+  artifactKey: Guid(458c10e94c9c4be40b5d66b33afeabea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword2/Textures/Sword2_Metallic.png using Guid(458c10e94c9c4be40b5d66b33afeabea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64f478936da9529bbe170f4022029ec2') in 0.027196 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword4/Sword4_Material_Red.mat
+  artifactKey: Guid(4c4919b0d02151f428dcb09dd55dd98d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword4/Sword4_Material_Red.mat using Guid(4c4919b0d02151f428dcb09dd55dd98d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cb991b5892762f41fe378ad52ddbb41') in 0.027862 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Prefabs/Sword2_Yellow.prefab
+  artifactKey: Guid(f8ab3275b4dd1724ea174a727f8f3378) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Prefabs/Sword2_Yellow.prefab using Guid(f8ab3275b4dd1724ea174a727f8f3378) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c33d7999a39aa7a19cd4ac9e6ad83ef5') in 0.033531 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword4/Textures/Sword4_Normal.png
+  artifactKey: Guid(81baf5b0ac52df24bb75b847a9449f41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Sword4/Textures/Sword4_Normal.png using Guid(81baf5b0ac52df24bb75b847a9449f41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76081044b92bb45286639f3ba281ba92') in 0.032839 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 61.350838 seconds.
+  path: Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Prefabs/Sword8_White.prefab
+  artifactKey: Guid(895a7e78001484143b8a25838887b6ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Prefabs/Sword8_White.prefab using Guid(895a7e78001484143b8a25838887b6ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eec02e0f791572b53e8044e84486cbc9') in 0.039909 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Prefabs/Sword13_Cyan.prefab
+  artifactKey: Guid(608076c565a36b346b63e557cd6af9eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Prefabs/Sword13_Cyan.prefab using Guid(608076c565a36b346b63e557cd6af9eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42fdaa435988d1a8859036ba0038ff36') in 0.028845 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Prefabs/Sword15_Iron.prefab
+  artifactKey: Guid(80b057e1cc878634488547feae408d42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Prefabs/Sword15_Iron.prefab using Guid(80b057e1cc878634488547feae408d42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83f454ff3f11d66df09e09b8c900ee72') in 0.023468 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Prefabs/Sword10_Dark.prefab
+  artifactKey: Guid(b84fe35b914023748b06fd3b37dceaa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Prefabs/Sword10_Dark.prefab using Guid(b84fe35b914023748b06fd3b37dceaa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '375826e8e2e3d6ca2cb2f371c5524e95') in 0.024995 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Prefabs/Sword11_Dark.prefab
+  artifactKey: Guid(49ab3366fe18566499ef7aa0d9c35068) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Prefabs/Sword11_Dark.prefab using Guid(49ab3366fe18566499ef7aa0d9c35068) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1a4953c7328af86320b62c3aafbf687') in 0.022012 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Prefabs/Sword11_Bone.prefab
+  artifactKey: Guid(9ad0600b8acd04641b634bf2ed932dd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Prefabs/Sword11_Bone.prefab using Guid(9ad0600b8acd04641b634bf2ed932dd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85da70b797f0ae3bfdef71dfb94f2773') in 0.021373 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Prefabs/Sword14_Blue.prefab
+  artifactKey: Guid(36589f066b25b1b4dab74eb18d6972fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Prefabs/Sword14_Blue.prefab using Guid(36589f066b25b1b4dab74eb18d6972fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74fd39fa19ed2101caa24d33d67319de') in 0.027324 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Prefabs/Sword14_Yellow.prefab
+  artifactKey: Guid(e52959e3043254b408ed3a5eca5b3a6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Prefabs/Sword14_Yellow.prefab using Guid(e52959e3043254b408ed3a5eca5b3a6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c81374799b3cc4cdf7d1eaa88abd97de') in 0.018721 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Prefabs/Sword13_Blue.prefab
+  artifactKey: Guid(53575ba1699a8c94c81a56ca90753235) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Prefabs/Sword13_Blue.prefab using Guid(53575ba1699a8c94c81a56ca90753235) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5eb6683b50793109d1a08cb39b1229f5') in 0.019416 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Prefabs/Sword15_Lava.prefab
+  artifactKey: Guid(97d88fb9a3565d84daf5fff081fcbb91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Prefabs/Sword15_Lava.prefab using Guid(97d88fb9a3565d84daf5fff081fcbb91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '456f7a666d486fca456342a05e8ad1a9') in 0.023424 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Prefabs/Sword13_Green.prefab
+  artifactKey: Guid(32394f2d0ec76a94399483672aecea44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Prefabs/Sword13_Green.prefab using Guid(32394f2d0ec76a94399483672aecea44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b182e747b1bff4fce0d7e54f46fc86ca') in 0.017857 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Prefabs/Sword14_Red.prefab
+  artifactKey: Guid(f6c4ffb4d9b01e6438aee492ee60e489) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Prefabs/Sword14_Red.prefab using Guid(f6c4ffb4d9b01e6438aee492ee60e489) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d6bcddc22e08f6ad2b0b97608cc8863') in 0.016886 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Prefabs/Sword10_Bone.prefab
+  artifactKey: Guid(ff1deabe1ffa54a47a2f188b49ac69c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blink/Art/Weapons/LowPoly/FreeSwords/Prefabs/Sword10_Bone.prefab using Guid(ff1deabe1ffa54a47a2f188b49ac69c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '161b47d248c925fc6ec320c82c4a2014') in 0.019980 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: Operacja We/Wy zosta³a przerwana z powodu zakoñczenia w¹tku lub ¿¹dania aplikacji.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

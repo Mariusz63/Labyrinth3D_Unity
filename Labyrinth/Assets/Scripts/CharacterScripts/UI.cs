@@ -5,20 +5,20 @@ using UnityEngine;
 
 public class UI : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI healthText = default;
+  // [SerializeField] private TextMeshProUGUI healthText = default;
     [SerializeField] private TextMeshProUGUI staminaText = default;
 
     private void OnEnable()
     {
-        FirstPersonController.OnDamage += UpdateHealth;
-        FirstPersonController.OnHeal += UpdateHealth;
+       // FirstPersonController.OnDamage += UpdateHealth;
+      //  FirstPersonController.OnHeal += UpdateHealth;
         FirstPersonController.OnStaminaChange += UpdateStamina;
     }
 
     private void OnDisable()
     {
-        FirstPersonController.OnDamage += UpdateHealth;
-        FirstPersonController.OnHeal += UpdateHealth;
+      //  FirstPersonController.OnDamage += UpdateHealth;
+     //   FirstPersonController.OnHeal += UpdateHealth;
         FirstPersonController.OnStaminaChange += UpdateStamina;
     }
 
@@ -30,7 +30,7 @@ public class UI : MonoBehaviour
 
     private void UpdateHealth(float currentHealth)
     {
-        healthText.text = currentHealth.ToString("0");
+      //  healthText.text = currentHealth.ToString("0");
     }
 
     private void UpdateStamina(float currentStamina)

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 468c3c06e66b51d4094666c39d32f9c2, type: 3}
+  m_Name: DoorKey
+  m_EditorClassIdentifier: 
+  createdItemPrefab: {fileID: 919132149155446097, guid: c0b06d3a3f83e974cb959c9380471eb7, type: 3}
+  quantityProduced: 1
+  requiredIngredients:
+  - itemName: Coin
+    requiredQuantity: 5
+  - itemName: Bottle_Mana
+    requiredQuantity: 1
+  - itemName: Bottle_Health
+    requiredQuantity: 1

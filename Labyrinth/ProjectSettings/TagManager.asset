@@ -10,6 +10,8 @@ TagManager:
   - Wall
   - InteractiveObject
   - Enemy
+  - Chest
+  - WayPoints
   layers:
   - Default
   - TransparentFX

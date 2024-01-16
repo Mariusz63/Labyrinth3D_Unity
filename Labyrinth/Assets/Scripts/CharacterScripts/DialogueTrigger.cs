@@ -8,18 +8,21 @@ public class DialogueTrigger : MonoBehaviour
 {
     [SerializeField] private List<DialogueString> dialogueStrings = new List<DialogueString>();
     [SerializeField] private Transform npcTransform;
+    [SerializeField] private float interactionDistance = 2f;
+    [SerializeField] private KeyCode interactionKey = KeyCode.T;
+
 
     private bool hasSpoken = false;
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Player") && !hasSpoken)
-        {
-            other.gameObject.GetComponent<DialogueManager>().DialogueStart(dialogueStrings, npcTransform);
-            hasSpoken = true;
-        }
+ 
+            if (other.CompareTag("Player") && !hasSpoken)
+            {
+                other.gameObject.GetComponent<DialogueManager>().DialogueStart(dialogueStrings, npcTransform);
+                hasSpoken = true;
+            }
     }
-
 }
 
 [System.Serializable]
