@@ -39,9 +39,6 @@ public class Enemy : MonoBehaviour
             }
 
             DropItem(player);
-           // transform.root.gameObject
-
-
         }
         else
         {

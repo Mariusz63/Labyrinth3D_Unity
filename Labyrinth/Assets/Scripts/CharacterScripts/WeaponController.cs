@@ -49,6 +49,10 @@ public class WeaponController : MonoBehaviour
         }
     }
 
+    public void OnTriggerEnter(Collider other)
+    {
+        WeaponDamageAttack();
+    }
 
 
     IEnumerator ResetAttackCooldown()

@@ -46,6 +46,8 @@ public class Inventory : MonoBehaviour
     private List<Slot> chestSlots = new List<Slot>();
     private GameObject chestSlotParent;
 
+    [SerializeField] FirstPersonController firstPersonController;
+
     public void Start()
     {
         ToggleInventory(false);
@@ -232,6 +234,7 @@ public class Inventory : MonoBehaviour
 
     private void ToggleInventory(bool enable)
     {
+       
         if (inventory == null)
         {
             Debug.LogError("Inventory GameObject is not assigned!");
@@ -260,11 +263,9 @@ public class Inventory : MonoBehaviour
         }
 
         inventory.SetActive(enable);
-
+        firstPersonController.ToggleCameraLook(!enable);
         Cursor.lockState = enable ? CursorLockMode.None : CursorLockMode.Locked;
         Cursor.visible = enable;
-
-
     }
 
     private void DragInventoryIcon()

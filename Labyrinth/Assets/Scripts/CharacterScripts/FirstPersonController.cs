@@ -1,3 +1,4 @@
+using Assets.Scripts.CharacterScripts;
 using System;
 using System.CodeDom.Compiler;
 using System.Collections;
@@ -9,12 +10,13 @@ using UnityEngine.UI;
 
 //FirstPersonController is singleton
 
-public class FirstPersonController : MonoBehaviour
+public class FirstPersonController : PlayerSubject
 {
     public bool CanMove { get;  set; } = true;
     private bool IsSprinting => canSprint && Input.GetKey(sprintKey);
     private bool ShouldJump => Input.GetKeyDown(jumpKey) && characterController.isGrounded;
     private bool ShoulCrouch => Input.GetKeyDown(crouchKey) && !duringCrouchingAnimation && characterController.isGrounded ;
+    public bool CanLook { get; private set; } = true;
 
     [Header("Player informations")]
     [SerializeField] private LoginManager loginManager;
@@ -157,6 +159,9 @@ public class FirstPersonController : MonoBehaviour
 
     private float rotationX = 0.0f;
 
+
+    private List<IPlayerObserver> playerObservers = new List<IPlayerObserver>();
+
     //Singleton
     public static FirstPersonController instance;
 
@@ -222,9 +227,10 @@ public class FirstPersonController : MonoBehaviour
         if (CanMove)
         {
             HandleMovemnetInput();
-            HandleMauseLook(true);
-           // HandleOpenInventory();
+            // HandleOpenInventory();
 
+            // Only handle camera movement if CanLook is true
+            if (CanLook) HandleMauseLook(true);
             if (canJump) HandleJump();
             if (canCrouch) HandleCrouch();
             if (canUseHeadbob) HandleHeadbob();
@@ -238,8 +244,17 @@ public class FirstPersonController : MonoBehaviour
 
             if (useStamina) HandleStamina();
 
+            
+
+
             ApplyFinalMovements();
         }
+    }
+
+    // Method to toggle camera movement
+    public void ToggleCameraLook(bool enableLook)
+    {
+        CanLook = enableLook;
     }
 
     private void HandleOpenInventory()
@@ -555,5 +570,4 @@ public class FirstPersonController : MonoBehaviour
         regeneratingStamina = null;
     }
 
-  
 }

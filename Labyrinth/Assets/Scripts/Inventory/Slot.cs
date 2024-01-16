@@ -68,7 +68,7 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         hovered = false;
     }
 
-    internal bool HasItem()
+    public bool HasItem()
     {
         return heldItem ? true : false;
     }

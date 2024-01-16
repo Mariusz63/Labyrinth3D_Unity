@@ -11,17 +11,18 @@ public class DialogueTrigger : MonoBehaviour
     [SerializeField] private float interactionDistance = 2f;
     [SerializeField] private KeyCode interactionKey = KeyCode.T;
 
-
     private bool hasSpoken = false;
+
 
     private void OnTriggerEnter(Collider other)
     {
- 
+  
             if (other.CompareTag("Player") && !hasSpoken)
             {
                 other.gameObject.GetComponent<DialogueManager>().DialogueStart(dialogueStrings, npcTransform);
                 hasSpoken = true;
             }
+        
     }
 }
 

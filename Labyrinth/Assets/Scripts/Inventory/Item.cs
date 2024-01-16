@@ -27,7 +27,6 @@ public class Item : MonoBehaviour
 
             if (removeOneUse)
                 currentQuantity--;
-
         }
     }
 }

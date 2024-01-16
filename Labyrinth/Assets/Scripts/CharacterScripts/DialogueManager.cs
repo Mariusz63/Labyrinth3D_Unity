@@ -22,8 +22,8 @@ public class DialogueManager : MonoBehaviour
     public List<DialogueString> dialogueList;
 
     [Header("Player")]
-    [SerializeField] private FirstPersonController firstPersonController; // trzeba pobrac gracza aby nie mogl ruszac myszka
-    private Transform playerCamera;
+    [SerializeField] private FirstPersonController firstPersonController;
+    [SerializeField] private Transform playerCamera;
 
     private int currentDialogueIndex = 0;
 
@@ -37,7 +37,8 @@ public class DialogueManager : MonoBehaviour
     public void DialogueStart(List<DialogueString> dialogueStrings, Transform npcTransform)
     {
         dialogueParent.SetActive(true);
-        firstPersonController.enabled = true;
+        //firstPersonController.enabled = true;
+        firstPersonController.ToggleCameraLook(false);
 
         // w razie czego zmienic 
         Cursor.lockState = CursorLockMode.None;
@@ -87,6 +88,7 @@ public class DialogueManager : MonoBehaviour
             DialogueString line = dialogueList[currentDialogueIndex];
 
             line.startDialogueEvent?.Invoke();
+            AudioManager.instance.Play("Dialog");
 
             if (line.isQuestion)
             {
@@ -121,6 +123,7 @@ public class DialogueManager : MonoBehaviour
         dialogueText.text = "";
         dialogueParent.SetActive(false);
 
+        firstPersonController.ToggleCameraLook(true);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }

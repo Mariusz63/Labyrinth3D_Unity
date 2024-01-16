@@ -15,7 +15,7 @@
 //}
 
 
-// Concrete observer (Minimap)
+// observer (Minimap)
 using Assets.Scripts.CharacterScripts;
 using UnityEngine;
 
