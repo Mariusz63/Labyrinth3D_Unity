@@ -11,7 +11,7 @@ public class PatrolState : StateMachineBehaviour
     List<Transform> wayList = new List<Transform>();
     NavMeshAgent agent;
     Transform player;
-
+    bool destinationSet = false;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
@@ -19,17 +19,20 @@ public class PatrolState : StateMachineBehaviour
         agent = animator.GetComponent<NavMeshAgent>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
 
+
         agent.speed = 2.5f;
         timer = 0;
         GameObject go = GameObject.FindGameObjectWithTag("WayPoints");
-        foreach(Transform t in go.transform)
+
+        foreach (Transform t in go.transform)
         {
             wayList.Add(t);
         }
 
         if (wayList.Count > 0)
         {
-            agent.destination = (wayList[Random.Range(0, wayList.Count)].position);
+            // Do not set the destination here, set a flag to do it in the update phase
+            destinationSet = true;
         }
         else
         {
@@ -40,25 +43,29 @@ public class PatrolState : StateMachineBehaviour
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        if (agent.isActiveAndEnabled)
+        if (agent != null && agent.isActiveAndEnabled)
         {
-            agent.destination = (wayList[Random.Range(0, wayList.Count)].position);
+            if (!destinationSet)
+            {
+                agent.destination = wayList[Random.Range(0, wayList.Count)].position;
+                destinationSet = true;
+            }
+
+            // Check if the agent has reached the destination
+            if (!agent.pathPending && agent.remainingDistance <= agent.stoppingDistance)
+            {
+                agent.destination = wayList[Random.Range(0, wayList.Count)].position;
+            }
         }
         else
         {
             Debug.LogError("NavMeshAgent is not active or enabled.");
         }
 
-
-        if (agent.remainingDistance<= agent.stoppingDistance)
-        {
-            agent.destination = (wayList[Random.Range(0, wayList.Count)].position);
-        }
-
         timer += Time.deltaTime;
         if (timer > 10)
         {
-            animator.SetBool("isPatroling", false);
+            animator.SetBool("isPatrolling", false);
         }
 
         float distance = Vector3.Distance(player.position, animator.transform.position);
@@ -71,7 +78,10 @@ public class PatrolState : StateMachineBehaviour
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        agent.destination = (agent.transform.position);
+        if (agent != null)
+        {
+            agent.destination = agent.transform.position;
+        }
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()

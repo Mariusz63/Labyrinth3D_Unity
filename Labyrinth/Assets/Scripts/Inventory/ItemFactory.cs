@@ -8,9 +8,14 @@ using UnityEngine.Events;
 
 namespace Assets.Scripts.Inventory
 {
-    public class ItemFactory
+    public interface IItemFactory
     {
-        public static Item CreateItem(string name, string description, Sprite icon, int maxQuantity, int equippableItemIndex, UnityEvent myEvent, bool removeOneUse)
+        Item CreateItem(string name, string description, Sprite icon, int maxQuantity, int equippableItemIndex, UnityEvent myEvent, bool removeOneUse);
+    }
+
+    public class ItemFactory : IItemFactory
+    {
+        public Item CreateItem(string name, string description, Sprite icon, int maxQuantity, int equippableItemIndex, UnityEvent myEvent, bool removeOneUse)
         {
             GameObject itemObject = new GameObject(name);
             Item itemComponent = itemObject.AddComponent<Item>();
@@ -26,4 +31,5 @@ namespace Assets.Scripts.Inventory
             return itemComponent;
         }
     }
+
 }

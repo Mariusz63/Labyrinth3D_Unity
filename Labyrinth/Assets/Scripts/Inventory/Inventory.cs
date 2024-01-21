@@ -6,6 +6,8 @@ using TMPro;
 using System;
 using Unity.VisualScripting;
 using System.IO;
+using Assets.Scripts.Inventory;
+using UnityEngine.Events;
 
 public class Inventory : MonoBehaviour
 {
@@ -47,6 +49,7 @@ public class Inventory : MonoBehaviour
     private GameObject chestSlotParent;
 
     [SerializeField] FirstPersonController firstPersonController;
+    private IItemFactory itemFactory = new ItemFactory();
 
     public void Start()
     {
@@ -228,6 +231,57 @@ public class Inventory : MonoBehaviour
         else
         {
             itemToAdd.currentQuantity = leftoverQuantity;
+        }
+    }
+
+
+    // Modify the method where you create an item
+    public void AddItemToInventory(string name, string description, Sprite icon, int maxQuantity, int equippableItemIndex, UnityEvent myEvent, bool removeOneUse, int overrideIndex = -1)
+    {
+        Item newItem = itemFactory.CreateItem(name, description, icon, maxQuantity, equippableItemIndex, myEvent, removeOneUse);
+
+        int leftoverQuantity = newItem.currentQuantity;
+        Slot openSlot = null;
+
+        for (int i = 0; i < allInventorySlots.Count; i++)
+        {
+            Item heldItem = allInventorySlots[i].GetItem();
+
+            if (heldItem != null && newItem.name == heldItem.name)
+            {
+                int freeSpaceInSlot = heldItem.maxQuantity - heldItem.currentQuantity;
+
+                if (freeSpaceInSlot >= leftoverQuantity)
+                {
+                    heldItem.currentQuantity += leftoverQuantity;
+                    Destroy(newItem.gameObject);
+                    allInventorySlots[i].UpdateData();
+                    return;
+                }
+                else // Add as much as we can to the current slot
+                {
+                    heldItem.currentQuantity = heldItem.maxQuantity;
+                    leftoverQuantity -= freeSpaceInSlot;
+                }
+            }
+            else if (heldItem == null)
+            {
+                if (!openSlot)
+                    openSlot = allInventorySlots[i];
+            }
+
+            allInventorySlots[i].UpdateData();
+        }
+
+        if (leftoverQuantity > 0 && openSlot)
+        {
+            openSlot.SetItem(newItem);
+            newItem.currentQuantity = leftoverQuantity;
+            newItem.gameObject.SetActive(false);
+        }
+        else
+        {
+            newItem.currentQuantity = leftoverQuantity;
         }
     }
 

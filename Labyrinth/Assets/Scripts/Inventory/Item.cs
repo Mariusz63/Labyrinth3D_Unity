@@ -2,19 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class Item : MonoBehaviour
 {
     [Header("Item settings")]
     public new string name = "New item";
-    public string description = "New descriprion";
+    public string description = "New description";
     public Sprite icon;
     public int currentQuantity = 1;
     public int maxQuantity = 16;
 
     public int equippableItemIndex = -1;
-    
-
+   
     [Header("Item Use")]
     public UnityEvent myEvent;
     public bool removeOneUse;

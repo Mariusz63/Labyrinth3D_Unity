@@ -397,6 +397,7 @@
 "Assets/Scripts/Enemy/AtackState.cs"
 "Assets/Scripts/Enemy/ChaseState.cs"
 "Assets/Scripts/Enemy/Enemy.cs"
+"Assets/Scripts/Enemy/EnemyAiTutorial.cs"
 "Assets/Scripts/Enemy/IdleState.cs"
 "Assets/Scripts/Enemy/LookAtPlayer.cs"
 "Assets/Scripts/Enemy/PatrolState.cs"

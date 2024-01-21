@@ -1,3 +1,4 @@
+using Assets.Scripts.CharacterScripts;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -31,8 +32,6 @@ public class WeaponController : MonoBehaviour
         Animator anim = axe.GetComponent<Animator>();
         anim.SetTrigger("Attack");
         StartCoroutine(ResetAttackCooldown());
-
-
     }
 
     private void WeaponDamageAttack()

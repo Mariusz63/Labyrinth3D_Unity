@@ -33,6 +33,7 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
         if (item != null)
         {
+            Debug.Log("SetItem in Slot " + gameObject.name);
             thisSlotImage.sprite = heldItem.icon;
             thisSlotImage.color = opaque;
             UpdateData();

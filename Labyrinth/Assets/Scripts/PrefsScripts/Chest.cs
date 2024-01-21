@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Chest : MonoBehaviour
 {
-
     [SerializeField] private GameObject chestUIPrefab;
     [SerializeField] private Transform chestUIParent;
 
