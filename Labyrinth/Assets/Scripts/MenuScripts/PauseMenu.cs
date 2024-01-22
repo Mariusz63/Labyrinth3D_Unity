@@ -1,17 +1,17 @@
+using Assets.Scripts.MenuScripts;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PauseMenu : MonoBehaviour
 {
     [SerializeField] private GameObject pauseMenuUI;
-
     [SerializeField] private bool isPaused;
+    [SerializeField] private FirstPersonController firstPersonController;
 
-    // Singleton instance
     private static PauseMenu instance;
 
-    // Property to access the singleton instance
     public static PauseMenu Instance
     {
         get
@@ -33,13 +33,24 @@ public class PauseMenu : MonoBehaviour
 
     private void Update()
     {
-
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            isPaused =!isPaused;
+            ICommand pauseCommand = new PauseCommand(this);
+            pauseCommand.Execute();
         }
 
-        if(isPaused)
+    }
+
+    public void OnClickResume()
+    {
+        TogglePause();
+    }
+
+    public void TogglePause()
+    {
+        isPaused = !isPaused;
+
+        if (isPaused)
         {
             ActivateMenu();
         }
@@ -49,11 +60,10 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
-
     public void ActivateMenu()
     {
-        //Pause game
         Time.timeScale = 0;
+        firstPersonController.ToggleCameraLook(false);
         AudioListener.pause = true;
         pauseMenuUI.SetActive(true);
     }
@@ -61,6 +71,7 @@ public class PauseMenu : MonoBehaviour
     public void DeactiveMenu()
     {
         Time.timeScale = 1;
+        firstPersonController.ToggleCameraLook(true);
         AudioListener.pause = false;
         pauseMenuUI.SetActive(false);
         isPaused = false;

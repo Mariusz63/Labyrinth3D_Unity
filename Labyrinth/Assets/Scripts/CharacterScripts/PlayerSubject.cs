@@ -11,12 +11,20 @@ namespace Assets.Scripts.CharacterScripts
     public class PlayerSubject : MonoBehaviour
     {
         private List<IPlayerObserver> observers = new List<IPlayerObserver>();
+        private List<IPlayerSensitivity> observersSens = new List<IPlayerSensitivity>();
 
         public void RegisterObserver(IPlayerObserver observer)
         {
             if (!observers.Contains(observer))
             {
                 observers.Add(observer);
+            }
+        }
+        public void RegisterSensObserver(IPlayerSensitivity _observer)
+        {
+            if (!observersSens.Contains(_observer))
+            {
+                observersSens.Add(_observer);
             }
         }
 

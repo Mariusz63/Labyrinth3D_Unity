@@ -1,4 +1,5 @@
 using Assets.Scripts.CharacterScripts;
+using Assets.Scripts.MenuScripts;
 using System;
 using System.CodeDom.Compiler;
 using System.Collections;
@@ -154,13 +155,15 @@ public class FirstPersonController : PlayerSubject
     private Camera playerCamera;
     private CharacterController characterController;
 
+
     private Vector3 moveDirection;
     private Vector2 currentInput;
-
+    
     private float rotationX = 0.0f;
 
 
-    private List<IPlayerObserver> playerObservers = new List<IPlayerObserver>();
+    private List<IPlayerSensitivity> playerObservers = new List<IPlayerSensitivity>();
+
 
     //Singleton
     public static FirstPersonController instance;
@@ -269,7 +272,6 @@ public class FirstPersonController : PlayerSubject
     {
         inventoryPanel.SetActive(enable);
     }
-
 
 
     private void HandleStamina()
@@ -398,19 +400,44 @@ public class FirstPersonController : PlayerSubject
         moveDirection.y = moveDirectionY;
     }
 
-     public void HandleMauseLook(bool canLook)
+    private void HandleMauseLook(bool canLook)
     {
-        if (canLook) 
+        if (canLook)
         {
-         rotationX -= Input.GetAxis("Mouse Y") * lookSensitivityY;
-        rotationX = Mathf.Clamp(rotationX, -upperLookLimit, lowerLookLimit);
-        playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
-        transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSensitivityX, 0);
+            rotationX -= Input.GetAxis("Mouse Y") * lookSensitivityY;
+            rotationX = Mathf.Clamp(rotationX, -upperLookLimit, lowerLookLimit);
+            playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
+            transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSensitivityX, 0);
+
         }
-       
+    }
+
+    public float GetLookSensitivity()
+    {
+        return lookSensitivityX; // You can return either X or Y, as they are set together in the example.
+    }
+
+    public void SetLookSensitivity(float sensitivity)
+    {
+        lookSensitivityX = sensitivity;
+        lookSensitivityY = sensitivity;
 
     }
 
+    public void UpdateMouseSensitivity(float sensitivity)
+    {
+        SetLookSensitivity(sensitivity);
+        NotifySensObservers(sensitivity);
+        Debug.Log($"Mouse sensitivity updated to: {sensitivity}");
+    }
+
+    private void NotifySensObservers(float sensitivity)
+    {
+        foreach (var observer in playerObservers)
+        {
+            observer.UpdateMouseSensitivity(sensitivity);
+        }
+    }
 
     private void HandleJump()
     {

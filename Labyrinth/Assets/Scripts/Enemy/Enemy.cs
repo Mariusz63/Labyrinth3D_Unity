@@ -13,6 +13,7 @@ public class Enemy : MonoBehaviour
      GameObject player;
 
     [SerializeField] private List<ItemDrop> itemDrops = new List<ItemDrop>();
+
     // Reference to the player's Health script
     private HealthPresenter healthPresenter;
 

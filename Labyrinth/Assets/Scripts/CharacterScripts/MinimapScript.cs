@@ -42,4 +42,5 @@ public class MinimapScript : MonoBehaviour, IPlayerObserver
         updatedPosition.z = newPosition.z; // Assuming Y is the up axis
         transform.position = updatedPosition;
     }
+
 }

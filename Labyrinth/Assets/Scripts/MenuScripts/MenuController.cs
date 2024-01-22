@@ -1,3 +1,5 @@
+using Assets.Scripts.CharacterScripts;
+using Assets.Scripts.MenuScripts;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -5,7 +7,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class MenuController : MonoBehaviour
+public class MenuController : MonoBehaviour, IPlayerSensitivity
 {
 
     [Header("Volume Settings")]
@@ -31,7 +33,6 @@ public class MenuController : MonoBehaviour
     [SerializeField] private TMP_Dropdown qualityDropdown;
     [SerializeField] private Toggle fullScreenToggle;
 
-
     private int _qualityLevel;
     private bool _isFullScreen;
     private float _brightnessLevel;
@@ -50,6 +51,10 @@ public class MenuController : MonoBehaviour
 
     private void Start()
     {
+
+        // Register this class as an observer
+        FirstPersonController.Instance.RegisterSensObserver(this);
+
         resolutions = Screen.resolutions; 
         resolutionDropdown.ClearOptions();
 
@@ -73,6 +78,7 @@ public class MenuController : MonoBehaviour
         resolutionDropdown.value = currentResolutionIndex;
         resolutionDropdown.RefreshShownValue();
     }
+
 
 
     public void SetResolution(int resolutionIndex)
@@ -116,6 +122,7 @@ public class MenuController : MonoBehaviour
         AudioListener.volume = volume;
         volumeTextValue.text = volume.ToString("0.0");
     }
+
 
     public void VolumeApply()
     {
@@ -229,4 +236,11 @@ public class MenuController : MonoBehaviour
         yield return new WaitForSeconds(2);
         confirmationPrompt.SetActive(false);
     }
+
+    public void UpdateMouseSensitivity(float sensitivity)
+    {
+        FirstPersonController.Instance.UpdateMouseSensitivity(sensitivity);
+        Debug.Log($"Mouse sensitivity updated from MenuController: {sensitivity}");
+    }
+
 }
