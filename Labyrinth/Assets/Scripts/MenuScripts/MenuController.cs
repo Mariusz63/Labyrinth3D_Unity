@@ -53,7 +53,7 @@ public class MenuController : MonoBehaviour, IPlayerSensitivity
     {
 
         // Register this class as an observer
-        FirstPersonController.Instance.RegisterSensObserver(this);
+      //  FirstPersonController.Instance.RegisterSensObserver(this);
 
         resolutions = Screen.resolutions; 
         resolutionDropdown.ClearOptions();
